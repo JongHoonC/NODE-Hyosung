@@ -1,0 +1,257 @@
+/*pagenation*/
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #4DB6AC;
+}
+
+
+/*헤더*/
+#h_wrap {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 45px;
+  height: 100px;
+  box-sizing: border-box;
+  z-index: 9999;
+  transition:0.5s;
+}
+
+#h_wrap:hover{
+  background-color: #fff;
+}
+
+#h_wrap > a {
+  display: block;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+/*로고*/
+.LOGO {
+  padding: 35px 0;
+  box-sizing: border-box;
+  width: 312px;
+  height: 30px;
+  background-image: url(../img/LOGO.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* 호버했을 때 로고 색 */
+.active1>a>.LOGO{
+  padding: 35px 0;
+  box-sizing: border-box;
+  width: 312px;
+  height: 30px;
+  background-image: url(../img/overLOGO.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 9000;
+}
+/* 호버했을 때 로고 색 */
+/* 로고 */
+
+/*네비게이션 바*/
+#gnb {
+  box-sizing: border-box;
+  z-index: 9999;
+}
+#gnb > ul {
+  width: 800px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  z-index: 9999;
+
+}
+
+#gnb ul li a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  color: #d9d9d9;
+}
+
+
+#drop > li {
+  width: 100%;
+  height: 100%;
+  padding: 35px 0;
+  box-sizing: border-box;
+}
+
+/* 드롭다운 */
+.cont{
+  visibility: hidden;
+  opacity: 0;
+  width: 700px;
+  height: 180px;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cont>li{
+  width: auto;
+  height: auto;
+  transition: all 0.5s;
+}
+.cont>li>a{
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s;
+}
+
+.cont.active{
+  visibility: visible;
+  opacity: 1;
+  width: 1000px;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+/* 드롭다운 */
+/* 네비게이션 바 */
+
+#employment{
+  width: 200px;
+}
+
+/*오른쪽 메뉴*/
+.h_right {
+  width: 312px;
+  padding: 35px 0;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.h_right > ul {
+  display: flex;
+}
+.h_right ul li {
+  margin-left: 22px;
+  border-bottom: 2px solid #d9d9d9;
+}
+.h_right > ul > li > a {
+  color: #d9d9d9;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* hambuger */
+.nav-icon-5{
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+.nav-icon-5 span{
+  background-color:#fff;
+  position: absolute;
+  border-radius: 2px;
+  transition: 0.3s cubic-bezier(.8, .5, .2, 1.4);
+  width:100%;
+  height: 2px;
+}
+.nav-icon-5 span:nth-child(1){
+  top:5px;
+  left: 0px;
+}
+.nav-icon-5 span:nth-child(2){
+  top:16px;
+  left: 0px;
+  opacity:1;
+}
+.nav-icon-5 span:nth-child(3){
+  bottom:0px;
+  left: 0px;
+}
+.nav-icon-5.open span:nth-child(1){
+  transform: rotate(45deg);
+  top: 13px;
+}
+.nav-icon-5.open span:nth-child(2){
+  opacity:0;
+}
+.nav-icon-5.open span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 13px;
+}
+/* hambuger */
+
+@media (max-width: 1440px) {
+  #gnb {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .LOGO {
+    width: 250px;
+    background-image: url(../img/LOGO_m.png);
+    padding: 15px 0;
+  }
+  .active1>a>.LOGO{
+    width: 250px;
+    background-image: url(../img/headerLOGO.png);
+    padding: 15px 0;
+  }
+  #h_wrap {
+    height: 60px;
+    padding: 0 20px;
+  }
+  .h_right {
+    padding: 15px 0;
+    height: 60px;
+  }
+  .fp-viewing-2 > #h_wrap >a> .LOGO {
+    background-image: url(../img/headerLOGO.png);
+  }
+  .fp-viewing-4 > #h_wrap >a> .LOGO {
+    background-image: url(../img/headerLOGO.png);
+  }
+}
+@media (max-width: 1000px) {
+  .h_right > ul > li > a {
+    font-size: 14px;
+  }
+}
+
+
+@media(max-width:768px){
+  .LOGO {
+    background-image: url(../img/headerLOGO.png);
+  }
+  #h_wrap {
+    background-color: #fff;
+  
+  }
+  .h_right ul li {
+    border-bottom: 2px solid #4DB6AC;
+  }
+  .h_right ul li a {
+    color: #4DB6AC;
+  }
+  .h_right_menu span{
+    border: 1px solid #4DB6AC;
+  }
+  .nav-icon-5 span{
+    background-color:#4DB6AC;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width:100%;
+    height: 1px;
+    transition-duration: 500ms
+  }
+}

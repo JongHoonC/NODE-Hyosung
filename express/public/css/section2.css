@@ -1,0 +1,171 @@
+/* 섹션2 */
+.section2 {
+  display: flex;
+}
+
+.section2_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: 1s;
+  z-index: 9999;
+}
+
+/*섹션2 제목 what we offer*/
+.section2Title {
+  margin-bottom: 20px;
+}
+.section2Title > h1 {
+  font-size: 50px;
+  letter-spacing: 0.5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: #333;
+}
+.section2Title > p {
+  font-size: 16px;
+  margin-top: 30px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  color: #888888;
+}
+
+/*섹션2 콘텐츠*/
+.section2Cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 박스마다 감싸 */
+.section2Cont > .article_wrap {
+  width: calc(33.33% - 20px);
+  height: 400px;
+  overflow: hidden;
+}
+.section2Cont > .article_wrap > article {
+  height: 400px;
+  padding: 85px 30px 30px;
+  color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  transition: 1s;
+}
+.section2Cont > .article_wrap > article:hover>.section2Cont_title>span{
+  width: 150px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.s2C_img1 {
+  background-image: url(../img/sub_visual_trsfm.jpg);
+}
+
+.s2C_img2 {
+  background-image: url(../img/sec2_banner2.jpg);
+}
+
+.s2C_img3 {
+  background-image: url(../img/sec2_banner3.jpg);
+}
+
+/* 박스의 제목 */
+.section2Cont_title {
+  height: 100%;
+  position: relative;
+}
+.section2Cont_title > h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+/* 밧스의 줄 */
+.section2Cont_title > span {
+  display: block;
+  width: 83px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+.section2Cont_title > h6 {
+  margin-top: 48px;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 더보기란 */
+.sec2_more {
+  margin: 54px auto 0 auto;
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/upper-link.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1280px) {
+  .section2 {
+    width: 100%;
+  }
+  .section2_wrap {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 958px) {
+  .section2Cont {
+    flex-direction: column;
+  }
+
+  .section2Cont > .article_wrap {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+
+  }
+  .section2Cont > .article_wrap> article {
+    height: auto;
+    padding: 30px 30px 30px;
+    box-sizing: border-box;
+  }
+
+
+  .section2Title > p {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .section2Cont_title > h6 {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  .section2_wrap {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .sec2_more {
+    display: none;
+  }
+  .section2_wrap {
+    padding-top: 50px;
+  }
+  .section2Cont_title > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
