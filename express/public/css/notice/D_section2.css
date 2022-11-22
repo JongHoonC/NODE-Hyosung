@@ -1,0 +1,55 @@
+.section2__wrap{
+  padding: 150px 20px 50px 20px;
+  box-sizing: border-box;
+
+}
+
+.section2__title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px; 
+}
+
+.detail__title{
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 36px 0 36px 10px;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.detail__date{
+  text-align: right;
+  margin: 20px 0;
+  font-size: 13px;
+}
+
+.detail__content{
+  padding-left: 10px;
+  height: 400px;
+  position: relative;
+}
+
+.file{
+  position: absolute;
+  bottom: 10px;
+}
+
+.goList{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.goList > a{
+
+  display: block;
+  width: 200px;height: 50px;
+  border: 1px solid #000;
+  line-height: 50px;
+  text-align: center;
+}
+
+

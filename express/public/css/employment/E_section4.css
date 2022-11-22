@@ -1,0 +1,63 @@
+.section4__pic{
+  background-image: url(../../img/cont_02_img.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 365px;
+}
+
+.figure2{
+  width: 361px;
+  height: 123px;
+  background-image: url(../../img/bg_symbol_2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+.more__box{
+  width: 200px;
+  height: 50px;
+  border: 1px solid #999;
+  margin-top: 40px;
+  transition: 0.5s;
+}
+.more__box:hover{
+  background-color: #4DB6AC;
+  border: 1px solid #4DB6AC;
+  transition: 0.5s;
+}
+.more__box:hover a p{
+  background-color: #4DB6AC;
+  border: 1px solid #4DB6AC;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.more__box a p{
+  text-align: center;
+  line-height: 50px;
+  color: #999;
+  font-size: 16px;
+  
+}
+
+@media(max-width:1280px){
+  .more__box{
+    margin: 40px auto;
+  }
+  
+}
+
+@media(max-width:768px){
+  .section4__pic{
+  width: 413px;
+  height: 258px;
+  }
+}

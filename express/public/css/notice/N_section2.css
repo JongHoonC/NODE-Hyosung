@@ -1,0 +1,145 @@
+* {
+  outline: none;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.section2__wrap {
+  padding: 150px 20px;
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.section2__title {
+  text-align: center;
+}
+
+.section2__title h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.convenience {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.notice__number{
+  display: flex;
+  align-items: center;
+}
+.notice__number p {
+  font-size: 15px;
+}
+.notice__number p span {
+  font-weight: bold;
+}
+
+.notice__search {
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+.notice__search a img {
+  display: block;
+}
+
+input {
+  border: none;
+}
+input::placeholder {
+  font-size: 14px;
+}
+
+.notice__list .banner {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 3px solid #333;
+  border-bottom: 1px solid #cfcfcf;
+  background-color: rgb(244, 244, 244);
+}
+.notice__list ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.notice__list .banner li {
+  padding: 11px 10px 10px;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+.notice__list .list li {
+  padding: 11px 10px 10px;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  border-bottom: 1px solid #cfcfcf;
+}
+.notice__list .list:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.NO {
+  width: 80px;
+}
+.title {
+  width: 500px;
+}
+
+.date {
+  width: 200px;
+}
+.N_file {
+  width: 200px;
+  display: flex;
+}
+.N_file > a > img {
+  display: block;
+  margin-left: 10px;
+}
+
+.root--write {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  text-align: right;
+}
+.root--write > a {
+  display: block;
+  border: 1px solid #cfcfcf;
+  width: 100px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+}
+a {
+  color: #333;
+}
+a:hover {
+  color: #333;
+}
+
+@media(max-width:1080px){
+  .notice__number{
+    margin-bottom: 20px;
+  }
+  .notice__number p {
+    font-size: 13px;
+  } 
+  input::placeholder {
+    font-size: 13px;
+  }
+  .notice__list .list li {
+    font-size: 13px;
+  }
+  .convenience {
+    flex-direction: column;
+  }
+  .notice__search {
+    border: none;
+  }
+}

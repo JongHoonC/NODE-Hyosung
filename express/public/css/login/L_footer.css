@@ -1,10 +1,12 @@
 /* 푸터 */
 footer {
+  border-top: 1px solid #d9d9d9;
+
   width: 100%;
   display: flex;
   box-sizing: border-box;
   padding: 0 40px;
-  background-color: #1b1b1b;
+  background-color: #fff;
   color: #777777;
 }
 
@@ -21,7 +23,7 @@ a > .LOGO_m {
   box-sizing: border-box;
   width: 250px;
   height: 24px;
-  background-image: url(../img/footer_LOGO.png);
+  background-image: url(../../img/LOGO_m_viewing13.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -42,7 +44,7 @@ a > .LOGO_m {
 
 .footer__copyright > h6 {
   margin-top: 20px;
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -97,10 +99,23 @@ a > .LOGO_m {
 }
 
 .dropdown-menu.show {
-  background-color: #a6a6a6;
+  background-color: #fff;
 }
 .dropdown-item {
   color: #333;
+}
+.dropdown-item {
+  display: block;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  width: auto;
+  clear: both;
+  font-weight: 400;
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
 }
 
 @media (max-width: 1280px) {

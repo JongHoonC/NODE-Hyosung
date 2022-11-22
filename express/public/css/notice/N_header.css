@@ -1,9 +1,3 @@
-/*pagenation*/
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  background: #4db6ac;
-}
-
 /*헤더*/
 #h_wrap {
   width: 100%;
@@ -16,11 +10,7 @@
   height: 100px;
   box-sizing: border-box;
   z-index: 9999;
-  transition: 0.3s;
-}
-
-#h_wrap:hover {
-  background-color: #fff;
+  transition: 0.5s;
 }
 
 #h_wrap > a {
@@ -34,7 +24,7 @@
   box-sizing: border-box;
   width: 312px;
   height: 30px;
-  background-image: url(../img/LOGO.png);
+  background-image: url(../../img/LOGO.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -71,6 +61,7 @@
   font-weight: 600;
   color: #d9d9d9;
 }
+
 #drop > li {
   width: 100%;
   height: 100%;
@@ -85,18 +76,18 @@
   width: 800px;
   position: absolute;
   top: 120px;
-  left: 52%;
+  left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
 }
 
 .cont > li {
-  width: auto;
+  width: 100%;
   height: auto;
   transition: all 0.3s;
 }
+
 .cont > li > a {
-  display: block;
   width: 100%;
   height: auto;
   transition: all 0.3s;
@@ -113,8 +104,35 @@
   transition: all 0.3s;
 }
 
+/* 드롭다운 */
+/* 네비게이션 바 */
+
 #employment {
-  width: 200px;
+  width: 400px;
+}
+
+/* focus */
+.focus {
+  background-color: #fff;
+}
+.focus a .LOGO {
+  background-image: url(../../img/LOGO_viewing13.png);
+}
+.focus #drop li a {
+  color: #333;
+  transition: 0.5s;
+}
+
+.focus .h_right ul li {
+  border-bottom: 2px solid #333;
+  transition: 0.5s;
+}
+.focus .h_right > ul > li > a {
+  color: #333;
+  transition: 0.5s;
+}
+.focus .h_right .nav-icon-5 span {
+  background-color: #333;
 }
 
 /*오른쪽 메뉴*/
@@ -151,7 +169,7 @@
   display: inline-block;
 }
 .nav-icon-5 span {
-  background-color: #fff;
+  background-color: #d9d9d9;
   position: absolute;
   border-radius: 2px;
   transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
@@ -193,13 +211,11 @@
 @media (max-width: 1280px) {
   .LOGO {
     width: 250px;
-    background-image: url(../img/LOGO_m.png);
+    background-image: url(../../img/LOGO_m.png);
     padding: 15px 0;
   }
-  .active1 > a > .LOGO {
-    width: 250px;
-    background-image: url(../img/headerLOGO.png);
-    padding: 15px 0;
+  .focus a .LOGO {
+    background-image: url(../../img/LOGO_m_viewing13.png);
   }
   #h_wrap {
     height: 60px;
@@ -209,42 +225,9 @@
     padding: 15px 0;
     height: 60px;
   }
-  .fp-viewing-2 > #h_wrap > a > .LOGO {
-    background-image: url(../img/headerLOGO.png);
-  }
-  .fp-viewing-4 > #h_wrap > a > .LOGO {
-    background-image: url(../img/headerLOGO.png);
-  }
 }
 @media (max-width: 1000px) {
   .h_right > ul > li > a {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 768px) {
-  .LOGO {
-    background-image: url(../img/headerLOGO.png);
-  }
-  #h_wrap {
-    background-color: #fff;
-  }
-  .h_right ul li {
-    border-bottom: 2px solid #4db6ac;
-  }
-  .h_right ul li a {
-    color: #4db6ac;
-  }
-  .h_right_menu span {
-    border: 1px solid #4db6ac;
-  }
-  .nav-icon-5 span {
-    background-color: #4db6ac;
-    position: absolute;
-    border-radius: 2px;
-    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-    width: 100%;
-    height: 1px;
-    transition-duration: 500ms;
   }
 }

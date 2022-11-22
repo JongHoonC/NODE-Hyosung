@@ -1,0 +1,124 @@
+main {
+  width: 100%;
+  height: 100vh;
+}
+section {
+  width: 550px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login__text{
+  display: flex;
+  flex-direction: column;
+
+}
+.login__text--title{
+  justify-content: center;
+  text-align: center;
+}
+.login__text--title h1 {
+  width: 100%;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.login__text--subTitle {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login__writeBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.login__writeBox > #id {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  height: 80px;
+  padding-left: 32px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.login__find {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 21px 0;
+  font-size: 16px;
+  color: #999999;
+}
+.login__find p a {
+  color: #999;
+}
+#login section button {
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.loginBox {
+  color: #fff;
+  background-color: #4db6ac;
+  border: none;
+}
+
+.signUp--box {
+  background-color: #fff;
+  border: 1px solid #999;
+  margin-bottom: 50px;
+}
+.signUp--box a {
+  display: block;
+  color: #4db6ac;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(190, 190, 190);
+  margin: 10px 0;
+}
+
+@media (max-width: 876px) {
+  .signUp--box {
+    margin-bottom: 170px;
+  }
+  #login section button {
+    height: 50px;
+    font-size: 14px;
+  }
+  input {
+    height: 50px;
+    padding-left: 12px;
+  }
+  input::placeholder {
+    font-size: 12px;
+  }
+  .login__find {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 587px) {
+  section {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}

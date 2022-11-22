@@ -1,0 +1,41 @@
+.section__wrap3{
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.section3__pic{
+  background-image: url(../../img/company.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 453px;
+  transition: 0.5s;
+}
+
+
+
+@media(max-width:1280px){
+  .section__wrap3{
+    flex-direction: column;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+
+}
+
+@media(max-width:768px){
+  .HyosungDo{
+    width: 100%;
+  } 
+  .section3__pic{
+  width: 286px;
+  height: 260px;
+
+  }
+}
