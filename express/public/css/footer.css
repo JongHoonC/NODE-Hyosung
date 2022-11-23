@@ -3,7 +3,7 @@ footer {
   width: 100%;
   display: flex;
   box-sizing: border-box;
-  padding: 0 40px;
+  padding: 20px 40px;
   background-color: #1b1b1b;
   color: #777777;
 }
@@ -105,7 +105,7 @@ a > .LOGO_m {
 
 @media (max-width: 1280px) {
   footer {
-    padding: 0 20px;
+    padding: 20px 20px;
     box-sizing: border-box;
   }
 }
@@ -126,13 +126,11 @@ a > .LOGO_m {
   }
   .rightBox__content > .footer__copyright {
     display: block;
+    margin-right: 250px;
   }
   .rightBox__content {
     flex-wrap: wrap;
     justify-content: flex-start;
-  }
-  .dropdown-toggle {
-    margin-right: 180px;
   }
   .footer__content {
     font-size: 13px;
@@ -147,8 +145,8 @@ a > .LOGO_m {
 }
 
 @media (max-width: 768px) {
-  .footer_con > h6 > span {
-    display: block;
-    padding-left: 20px;
+  .rightBox__content > .footer__copyright {
+    width: 100%;
+    margin: 0;
   }
 }

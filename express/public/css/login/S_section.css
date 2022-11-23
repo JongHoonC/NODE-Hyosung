@@ -63,6 +63,11 @@ ul {
 .red_txt {
   color: #ee7272;
 }
+.container{
+  margin: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
 .blind {
   display: block;
   overflow: hidden;
@@ -540,7 +545,6 @@ ul {
     height: 35px;
     line-height: 35px;
     font-size: 12px;
-    margin: 5px 0 0;
   }
   .join_form table input.send_number + a {
     margin: 0 0 0 5px;

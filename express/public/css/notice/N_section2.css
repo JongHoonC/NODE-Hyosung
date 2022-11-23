@@ -59,6 +59,7 @@ input::placeholder {
   border-top: 3px solid #333;
   border-bottom: 1px solid #cfcfcf;
   background-color: rgb(244, 244, 244);
+  
 }
 .notice__list ul {
   display: flex;
@@ -134,12 +135,25 @@ a:hover {
     font-size: 13px;
   }
   .notice__list .list li {
-    font-size: 13px;
+    font-size: 12px;
+    overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
   }
   .convenience {
     flex-direction: column;
   }
   .notice__search {
     border: none;
+  }
+  .notice__list .banner li {
+    font-size: 15px;
+  }
+  .section2__title h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .detail__content > p{
+    font-size: 14px;
   }
 }

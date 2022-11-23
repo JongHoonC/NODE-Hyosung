@@ -19,6 +19,9 @@
   border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
 }
+.detail__title h3{
+  font-size: 18px;
+}
 
 .detail__date{
   text-align: right;
@@ -53,3 +56,4 @@
 }
 
 
+@media(max-width:768px){}

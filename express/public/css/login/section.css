@@ -4,6 +4,7 @@ main {
 }
 #login > section > form {
   width: 100%;
+  height: auto;
 }
 section {
   width: 550px;
@@ -110,7 +111,7 @@ input {
 
 @media (max-width: 876px) {
   .signUp--box {
-    margin-bottom: 170px;
+    margin-bottom: 100px;
   }
   #login section button {
     height: 50px;
