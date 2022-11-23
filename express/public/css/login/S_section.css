@@ -248,7 +248,7 @@ ul {
   width: 182px;
 }
 .join_form table input.send_number {
-  width: 200px;
+  width: 150px;
 }
 .join_form table th span {
   color: #404040;
@@ -364,7 +364,7 @@ ul {
   font-weight: bold;
 }
 .join_form table input.email {
-  width: 102px;
+  width: 200px;
   display: inline-block;
 }
 .explan_txt {

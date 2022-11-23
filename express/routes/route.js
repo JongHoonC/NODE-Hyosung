@@ -36,7 +36,23 @@ router.post('/writeList', (req, res, next) => {
 });
 router.post('/goLOGIN', (req, res, next) => {
   let paramL = JSON.parse(JSON.stringify(req.body));
-  console.log(paramL);
+  let id = paramL['userID'];
+  let pass = paramL['userPW'];
+  console.log(`userID : ${id}`);
+  console.log(`userPW : ${pass}`);
+});
+router.post('/GOsign-up', (req, res, next) => {
+  let paramS = JSON.parse(JSON.stringify(req.body));
+  let id = paramS['id'];
+  let name = paramS['name'];
+  let pw = paramS['pw'];
+  let mail1 = paramS['mail'];
+  let number = paramS['phoneNum'];
+  console.log(`userID : ${id}`);
+  console.log(`userName : ${name}`);
+  console.log(`userPW : ${pw}`);
+  console.log(`userEmail : ${mail1}`);
+  console.log(`userPhonenumber : ${number}`);
 });
 
 module.exports = router;

@@ -10,16 +10,16 @@
     </div>
     <form action="/goLOGIN" method="post">
       <div class="login__writeBox">
-        <input type="text" name="userID" id="id" placeholder="아이디" />
-        <input type="password" name="userPW" id="password" placeholder="비밀번호" />
+        <input type="text" name="userID" id="userID" placeholder="아이디" />
+        <input type="password" name="userPW" id="userPW" placeholder="비밀번호" />
       </div>
-    </form>
-    <div class="login__find ko">
-      <p><a href=""> 아이디 찾기</a> | <a href="">비밀번호 찾기</a></p>
-    </div>
+      <div class="login__find ko">
+        <p><a href=""> 아이디 찾기</a> | <a href="">비밀번호 찾기</a></p>
+      </div>
 
-    <input type="submit" id="GOLOGIN" value="로그인" class="ko" />
-    <span class="line"></span>
-    <button class="signUp--box ko" type="button"><a href="/sign-up">회원가입</a></button>
+      <input type="submit" id="GOLOGIN" onclick="Validation()" value="로그인" class="ko" />
+      <span class="line"></span>
+      <button class="signUp--box ko" type="button"><a href="/sign-up">회원가입</a></button>
+    </form>
   </section>
 </main>

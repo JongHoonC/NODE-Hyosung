@@ -65,3 +65,17 @@ function scrollBtn() {
     h_wrap.classList.remove('focus');
   }
 }
+
+const id = document.querySelector('#userID'),
+  password = document.querySelector('#userPW'),
+  loginButton = document.querySelector('#GOLOGIN');
+
+loginButton.addEventListener('click', login);
+
+function login() {
+  const request = {
+    id: id.value,
+    password: password.value,
+  };
+  console.log(request);
+}
