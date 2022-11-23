@@ -83,11 +83,11 @@ section {
   }
 }
 
-@media(max-width:1080px){
+@media (max-width: 1080px) {
   .w1000 {
     width: 100%;
   }
-  .N_file{
+  .N_file {
     display: none;
   }
 }
