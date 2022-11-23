@@ -80,12 +80,13 @@
 
 /* 드롭다운 */
 .cont {
+  display: block;
   visibility: hidden;
   opacity: 0;
   width: 800px;
   position: absolute;
   top: 120px;
-  left: 52%;
+  left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
 }
@@ -94,6 +95,7 @@
   width: auto;
   height: auto;
   transition: all 0.3s;
+  
 }
 .cont > li > a {
   display: block;
