@@ -3,7 +3,9 @@
 @import url(N_section2.css);
 @import url(D_section2.css);
 @import url(W_section2.css);
+@import url(writeList.css);
 @import url(N_footer.css);
+
 /* *{
   transition: 0.3s;
 } */

@@ -19,26 +19,26 @@
           <p>임시저장</p>
         </a>
       </div>
-      <div class="write--box">
-        <input type="text" placeholder="제목" />
-        <textarea name="content" id="content" cols="30" rows="10" placeholder="내용"></textarea>
-      </div>
-      <div class="rootName">
-        <input type="text" placeholder="관리자 ID" />
-        <input type="password" placeholder="관리자 PW" />
-      </div>
-      <div class="push">
-        <div class="registration">
-          <a href="">
-            <p>등록</p>
-          </a>
+      <form action="/writeList" method="post">
+        <div class="write--box">
+          <input type="text" name="title" placeholder="제목" />
+          <textarea name="content" id="content" cols="30" rows="10" placeholder="내용"></textarea>
         </div>
-        <div class="cancel">
-          <a href="">
-            <p>취소</p>
-          </a>
+        <div class="rootName">
+          <input type="text" name="rootID" placeholder="관리자 ID" />
+          <input type="password" placeholder="관리자 PW" />
         </div>
-      </div>
+        <div class="push">
+          <div class="registration">
+            <input type="submit" id="button" value="작성" />
+          </div>
+          <div class="cancel">
+            <a href="">
+              <p>취소</p>
+            </a>
+          </div>
+        </div>
+      </form>
     </div>
   </section>
 </main>

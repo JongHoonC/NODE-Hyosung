@@ -25,5 +25,14 @@ router.get('/write', (req, res, next) => {
 router.get('/detail', (req, res, next) => {
   res.render('detail', {layout: 'layoutNotice'});
 });
+router.get('/writeList', (req, res, next) => {
+  res.render('writeList', {layout: 'layoutNotice'});
+});
+
+router.post('/writeList', (req, res, next) => {
+  let param = JSON.parse(JSON.stringify(req.body));
+  res.render('writeList.ejs', {layout: 'layoutNotice', data: param});
+  console.log(param);
+});
 
 module.exports = router;

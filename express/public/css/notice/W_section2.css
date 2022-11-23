@@ -45,13 +45,14 @@
 }
 
 
-.registration a{
+.registration input{
   border: 1px solid #000;
   display: block;
   width: 100%;
   height: auto;
   padding: 5px 10px;
     box-sizing: border-box;
+    background-color: #fff;
   }
 
     .cancel{
