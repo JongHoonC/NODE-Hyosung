@@ -34,5 +34,9 @@ router.post('/writeList', (req, res, next) => {
   res.render('writeList.ejs', {layout: 'layoutNotice', data: param});
   console.log(param);
 });
+router.post('/goLOGIN', (req, res, next) => {
+  let paramL = JSON.parse(JSON.stringify(req.body));
+  console.log(paramL);
+});
 
 module.exports = router;
