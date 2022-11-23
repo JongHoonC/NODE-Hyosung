@@ -24,5 +24,3 @@ var swiper = new Swiper('.swiperMy', {
     hide: true,
   },
 });
-
-AOS.init();

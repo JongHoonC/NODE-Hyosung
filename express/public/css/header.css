@@ -76,6 +76,7 @@
   height: 100%;
   padding: 35px 0;
   box-sizing: border-box;
+
 }
 
 /* 드롭다운 */
@@ -85,7 +86,7 @@
   opacity: 0;
   width: 800px;
   position: absolute;
-  top: 120px;
+  top: 80px;
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
@@ -101,6 +102,8 @@
   display: block;
   width: 100%;
   height: auto;
+  padding: 5px 10px;
+  box-sizing: border-box;
   transition: all 0.3s;
 }
 

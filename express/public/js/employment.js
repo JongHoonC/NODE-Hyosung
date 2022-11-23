@@ -8,14 +8,14 @@ let gnb = document.getElementById('gnb');
 gnb.addEventListener('mouseover', event => {
   h_wrap.style.height = '180px';
   for (i = 0; i < conts.length; i++) {
-    conts[i].style.height = '20px';
+    conts[i].style.height = '100px';
   }
 });
 
 gnb.addEventListener('mouseleave', event => {
   h_wrap.style.height = '100px';
   for (i = 0; i < conts.length; i++) {
-    conts[i].style.height = '20px';
+    conts[i].style.height = '100px';
   }
 });
 
