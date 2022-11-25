@@ -40,6 +40,22 @@
   bottom: 10px;
 }
 
+.reWrite{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reWrite > a{
+
+  display: block;
+  width: 120px;height: 50px;
+  border: 1px solid #000;
+  line-height: 50px;
+  text-align: center;
+}
+
+
 .goList{
   margin-top: 20px;
   display: flex;

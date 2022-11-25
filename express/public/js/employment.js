@@ -49,9 +49,12 @@ gnb.addEventListener('mouseleave', e => {
 });
 
 const icons = document.querySelectorAll('.icon');
+let mySidenav = document.getElementById('mySidenav');
 icons.forEach(icon => {
   icon.addEventListener('click', event => {
     icon.classList.toggle('open');
+    mySidenav.classList.toggle('SlideNav');
+    h_wrap.classList.toggle('hamberger');
   });
 });
 
