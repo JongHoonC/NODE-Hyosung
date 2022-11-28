@@ -16,7 +16,7 @@
   height: 100px;
   box-sizing: border-box;
   z-index: 9999;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .hamberger{
   background-color: #fff;
@@ -35,7 +35,7 @@
 }
 
 
-.hamberger > .h_right ul li {
+.hamberger > .h_right> ul> li {
   border-bottom: 2px solid #4db6ac;
 }
 .hamberger > .h_right > ul > li > a {
@@ -109,7 +109,7 @@
   display: block;
   visibility: hidden;
   opacity: 0;
-  width: 800px;
+  width: 900px;
   position: absolute;
   top: 80px;
   left: 50%;
@@ -135,7 +135,7 @@
 .cont.active {
   visibility: visible;
   opacity: 1;
-  width: 1000px;
+  width: 1100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -144,7 +144,7 @@
 }
 
 #employment {
-  width: 200px;
+  width: 400px;
 }
 
 /*오른쪽 메뉴*/
@@ -160,7 +160,7 @@
 .h_right > ul {
   display: flex;
 }
-.h_right ul li {
+.h_right >ul >li {
   margin-left: 22px;
   border-bottom: 2px solid #d9d9d9;
 }
@@ -177,8 +177,8 @@
   height: 30px;
   margin-left: 20px;
   position: relative;
-  cursor: pointer;
   display: inline-block;
+  cursor: auto;
 }
 .nav-icon-5 span {
   background-color: #fff;
@@ -231,19 +231,42 @@
   padding-top: 60px;
   text-align:center;
 }
+#mySidenav> ul{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+#mySidenav> ul>li{
+  display: block;
+  font-size: 24px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+}
+#mySidenav >ul > li>ul{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+#mySidenav >ul > li>ul>li{
+  margin: 7px auto;
+}
+
+#mySidenav> ul >li>ul>li>a{
+  font-size: 18px;
+}
+
+
+.underMenu>li> a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
   color: #818181;
   display: block;
   transition: 0.3s;
-
 }
 
-.sidenav a:hover{
-  color: #f1f1f1;
+.underMenu>li> a:hover{
+  color: #333;
 }
 
 .sidenav .closebtn {

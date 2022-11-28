@@ -1,13 +1,13 @@
-.fp-viewing-1 >#h_wrap:hover #gnb ul li a {
+.fp-viewing-1 >#h_wrap:hover #gnb >ul >li> a {
   color: #4DB6AC;
 }
-.fp-viewing-1 > #h_wrap:hover .h_right ul li {
+.fp-viewing-1 > #h_wrap:hover> .h_right >ul> li {
   border-bottom: 2px solid #4DB6AC;
 }
-.fp-viewing-1 > #h_wrap:hover .h_right ul li a{
+.fp-viewing-1 > #h_wrap:hover >.h_right> ul> li> a{
   color: #4DB6AC;
 }
-.fp-viewing-1 > #h_wrap:hover .h_right .h_right_menu .nav-icon-5 span{
+.fp-viewing-1 > #h_wrap:hover> .h_right> .h_right_menu >.nav-icon-5 >span{
   background-color: #4DB6AC;
 }
 
@@ -17,16 +17,16 @@
 .fp-viewing-2 > #h_wrap >a> .LOGO {
   background-image: url(../img/overLOGO.png);
 }
-.fp-viewing-2 > #h_wrap #gnb ul li a {
+.fp-viewing-2 > #h_wrap> #gnb> ul> li> a {
   color: #4DB6AC;
 }
-.fp-viewing-2 > #h_wrap .h_right ul li {
+.fp-viewing-2 > #h_wrap >.h_right >ul> li {
   border-bottom: 2px solid #4DB6AC;
 }
-.fp-viewing-2 > #h_wrap .h_right ul li a{
+.fp-viewing-2 > #h_wrap >.h_right >ul >li >a{
   color: #4DB6AC;
 }
-.fp-viewing-2 > #h_wrap .h_right .h_right_menu .nav-icon-5 span{
+.fp-viewing-2 > #h_wrap> .h_right> .h_right_menu >.nav-icon-5 >span{
   background-color: #4DB6AC;
 }
 .fp-viewing-2 > #scroll-downs > span{
@@ -43,32 +43,32 @@
 
 
 
-.fp-viewing-3 >#h_wrap:hover #gnb ul li a {
+.fp-viewing-3 >#h_wrap:hover >#gnb> ul> li> a {
   color: #4DB6AC;
 }
-.fp-viewing-3 > #h_wrap:hover .h_right ul li {
+.fp-viewing-3 > #h_wrap:hover >.h_right >ul >li {
   border-bottom: 2px solid #4DB6AC;
 }
-.fp-viewing-3 > #h_wrap:hover .h_right ul li a{
+.fp-viewing-3 > #h_wrap:hover> .h_right> ul >li >a{
   color: #4DB6AC;
 }
-.fp-viewing-3 > #h_wrap:hover .h_right .h_right_menu .nav-icon-5 span{
+.fp-viewing-3 > #h_wrap:hover> .h_right> .h_right_menu >.nav-icon-5 >span{
   background-color: #4DB6AC;
 }
 
 .fp-viewing-4 > #h_wrap {
   background-color: #fff;
 }
-.fp-viewing-4 > #h_wrap #gnb ul li a {
+.fp-viewing-4 > #h_wrap #gnb> ul >li >a {
   color: #4DB6AC;
 }
-.fp-viewing-4 > #h_wrap .h_right ul li {
+.fp-viewing-4 > #h_wrap >.h_right >ul> li {
   border-bottom: 2px solid #4DB6AC;
 }
-.fp-viewing-4 > #h_wrap .h_right ul li a{
+.fp-viewing-4 > #h_wrap >.h_right> ul >li> a{
   color: #4DB6AC;
 }
-.fp-viewing-4 > #h_wrap .h_right .h_right_menu .nav-icon-5 span{
+.fp-viewing-4 > #h_wrap> .h_right >.h_right_menu >.nav-icon-5> span{
   background-color: #4DB6AC;
 }
 .fp-viewing-4 > #h_wrap >a> .LOGO {
@@ -86,27 +86,27 @@
 
 
 
-.fp-viewing-5 >#h_wrap:hover #gnb ul li a {
+.fp-viewing-5 >#h_wrap:hover> #gnb >ul >li> a {
   color: #4DB6AC;
 }
-.fp-viewing-5 > #h_wrap:hover .h_right ul li {
+.fp-viewing-5 > #h_wrap:hover >.h_right> ul >li {
   border-bottom: 2px solid #4DB6AC;
 }
-.fp-viewing-5 > #h_wrap:hover .h_right ul li a{
+.fp-viewing-5 > #h_wrap:hover >.h_right >ul >li >a{
   color: #4DB6AC;
 }
-.fp-viewing-5 > #h_wrap:hover .h_right .h_right_menu .nav-icon-5 span{
+.fp-viewing-5 > #h_wrap:hover .h_right> .h_right_menu >.nav-icon-5> span{
   background-color: #4DB6AC;
 }
-.fp-viewing-6 >#h_wrap:hover #gnb ul li a {
+.fp-viewing-6 >#h_wrap:hover> #gnb> ul >li >a {
   color: #4DB6AC;
 }
-.fp-viewing-6 > #h_wrap:hover .h_right ul li {
+.fp-viewing-6 > #h_wrap:hover >.h_right >ul> li {
   border-bottom: 2px solid #4DB6AC;
 }
-.fp-viewing-6 > #h_wrap:hover .h_right ul li a{
+.fp-viewing-6 > #h_wrap:hover .h_right> ul> li> a{
   color: #4DB6AC;
 }
-.fp-viewing-6 > #h_wrap:hover .h_right .h_right_menu .nav-icon-5 span{
+.fp-viewing-6 > #h_wrap:hover> .h_right >.h_right_menu >.nav-icon-5> span{
   background-color: #4DB6AC;
 }

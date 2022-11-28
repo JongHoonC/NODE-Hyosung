@@ -18,6 +18,32 @@
   padding: 15px 0;
   box-sizing: border-box;
 }
+.hamberger{
+  background-color: #fff;
+}
+.hamberger > a > .LOGO{
+  padding: 35px 0;
+  box-sizing: border-box;
+  width: 312px;
+  height: 30px;
+  background-image: url(../../img/LOGO_viewing13.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hamberger > #gnb{
+  display: none;
+}
+
+.hamberger > .h_right ul li {
+  border-bottom: 2px solid #333;
+}
+.hamberger > .h_right > ul > li > a {
+  color: #333;
+}
+.hamberger > .h_right>.h_right_menu> .nav-icon-5 span {
+  background-color: #333;
+}
+
 /*로고*/
 .LOGO {
   padding: 35px 0;
@@ -73,7 +99,7 @@
 .cont {
   visibility: hidden;
   opacity: 0;
-  width: 800px;
+  width: 900px;
   position: absolute;
   top: 80px;
   left: 50%;
@@ -97,7 +123,7 @@
 .cont.active {
   visibility: visible;
   opacity: 1;
-  width: 1000px;
+  width: 1100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -201,6 +227,51 @@
   top: 13px;
 }
 /* hambuger */
+#mySidenav.SlideNav{
+  width: 100%;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  margin-top: 100px;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #333;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
 
 @media (max-width: 1440px) {
   #gnb {
@@ -224,6 +295,15 @@
   .h_right {
     padding: 15px 0;
     height: 60px;
+  }
+  .hamberger > a > .LOGO{
+    width: 250px;
+    height: 30px;
+    background-image: url(../../img/LOGO_m_viewing13.png);
+    padding: 15px 0;
+  }
+  .sidenav {
+    margin-top: 60px;
   }
 }
 @media (max-width: 1000px) {
