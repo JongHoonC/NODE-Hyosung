@@ -38,7 +38,7 @@
 }
 
 
-.hamberger > .h_right ul li {
+.hamberger > .h_right >ul> li {
   border-bottom: 2px solid #4db6ac;
 }
 .hamberger > .h_right > ul > li > a {
@@ -156,7 +156,7 @@
 .h_right > ul {
   display: flex;
 }
-.h_right ul li {
+.h_right> ul> li {
   margin-left: 22px;
   border-bottom: 2px solid #4db6ac;
 }
@@ -229,17 +229,43 @@
   text-align:center;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+#mySidenav> ul{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+#mySidenav> ul>li{
+  display: block;
+  font-size: 24px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+#mySidenav >ul > li>ul{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+#mySidenav >ul > li>ul>li{
+  margin: 7px auto;
+}
+
+#mySidenav> ul >li>ul>li>a{
+  font-size: 18px;
+}
+ul{
+  padding-left: 0;
+}
+
+.underMenu>li> a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
   color: #818181;
   display: block;
   transition: 0.3s;
-
 }
 
-.sidenav a:hover{
+.underMenu>li> a:hover{
   color: #333;
 }
 
@@ -290,5 +316,14 @@
 @media (max-width: 1000px) {
   .h_right > ul > li > a {
     font-size: 14px;
+  }
+  #mySidenav >ul > li>ul {
+    display: none;
+  }
+  #mySidenav> ul {
+    flex-direction: column;
+  }
+  #mySidenav> ul>li {
+    margin-bottom: 50px;
   }
 }

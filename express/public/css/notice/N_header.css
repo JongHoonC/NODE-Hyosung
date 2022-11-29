@@ -34,7 +34,7 @@
   display: none;
 }
 
-.hamberger > .h_right ul li {
+.hamberger > .h_right> ul >li {
   border-bottom: 2px solid #333;
 }
 .hamberger > .h_right > ul > li > a {
@@ -151,7 +151,7 @@
   transition: 0.5s;
 }
 
-.focus .h_right ul li {
+.focus .h_right> ul> li {
   border-bottom: 2px solid #333;
   transition: 0.5s;
 }
@@ -159,7 +159,7 @@
   color: #333;
   transition: 0.5s;
 }
-.focus .h_right .nav-icon-5 span {
+.focus .h_right .nav-icon-5> span {
   background-color: #333;
 }
 
@@ -176,7 +176,7 @@
 .h_right > ul {
   display: flex;
 }
-.h_right ul li {
+.h_right> ul >li {
   margin-left: 22px;
   border-bottom: 2px solid #d9d9d9;
 }
@@ -196,7 +196,7 @@
   cursor: pointer;
   display: inline-block;
 }
-.nav-icon-5 span {
+.nav-icon-5> span {
   background-color: #d9d9d9;
   position: absolute;
   border-radius: 2px;
@@ -204,11 +204,11 @@
   width: 100%;
   height: 2px;
 }
-.nav-icon-5 span:nth-child(1) {
+.nav-icon-5> span:nth-child(1) {
   top: 5px;
   left: 0px;
 }
-.nav-icon-5 span:nth-child(2) {
+.nav-icon-5 >span:nth-child(2) {
   top: 16px;
   left: 0px;
   opacity: 1;
@@ -248,20 +248,43 @@
   text-align:center;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+#mySidenav> ul{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+#mySidenav> ul>li{
+  display: block;
+  font-size: 24px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+
+}
+#mySidenav >ul > li>ul{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+#mySidenav >ul > li>ul>li{
+  margin: 7px auto;
+}
+
+#mySidenav> ul >li>ul>li>a{
+  font-size: 18px;
+}
+
+
+.underMenu>li> a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 16px;
   color: #818181;
   display: block;
   transition: 0.3s;
-
 }
 
-.sidenav a:hover{
+.underMenu>li> a:hover{
   color: #333;
 }
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -311,5 +334,14 @@
 @media (max-width: 1000px) {
   .h_right > ul > li > a {
     font-size: 14px;
+  }
+  #mySidenav >ul > li>ul {
+    display: none;
+  }
+  #mySidenav> ul {
+    flex-direction: column;
+  }
+  #mySidenav> ul>li {
+    margin-bottom: 50px;
   }
 }
