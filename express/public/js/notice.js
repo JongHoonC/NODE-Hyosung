@@ -61,7 +61,7 @@ window.onscroll = function () {
   scrollBtn();
 };
 function scrollBtn() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     h_wrap.classList.add('focus');
   } else {
     h_wrap.classList.remove('focus');

@@ -1,0 +1,36 @@
+.section2__wrap{
+  border: 1px solid #000;
+  padding: 100px 200px;
+  box-sizing: border-box;
+}
+
+
+
+/* glance */
+.glance{
+  display: flex;
+  justify-content: space-between;
+}
+.glance>.IMG--box{
+  width: 247px;
+  height: 216px;
+  background-image: url(../../img/img_intro_01.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* inpra */
+.inpra{
+  display: flex;
+  justify-content: space-between;
+}
+.inpra>.IMG--box{
+  width: 247px;
+  height: 216px;
+  background-image: url(../../img/img_intro_02.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

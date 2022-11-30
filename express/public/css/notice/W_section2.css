@@ -31,6 +31,7 @@
 }
 .write--box input{
   width: 100%;
+  border: 1px solid #000;
 }
 .write--box textarea{
   resize: none;

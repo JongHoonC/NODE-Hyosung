@@ -43,10 +43,13 @@
 .notice__search a img {
   display: block;
 }
-
-input {
+.notice__search>input{
   border: none;
 }
+
+/* input {
+  border: none;
+} */
 input::placeholder {
   font-size: 14px;
 }

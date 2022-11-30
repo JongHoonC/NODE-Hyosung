@@ -10,6 +10,9 @@ router.get('/', (req, res, next) => {
 router.get('/emp', (req, res, next) => {
   res.render('employment', {layout: 'layoutEmp'});
 });
+router.get('/about_us', (req, res, next) => {
+  res.render('about_us', {layout: 'layoutEmp'});
+});
 router.get('/login', (req, res, next) => {
   res.render('login', {layout: 'layoutLogin'});
 });
