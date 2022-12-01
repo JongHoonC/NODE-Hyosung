@@ -6,6 +6,7 @@ footer {
   padding: 20px 40px;
   background-color: #fff;
   color: #777777;
+  border-top: 1px solid #777;
 }
 
 .footer__wraper {
