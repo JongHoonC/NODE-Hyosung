@@ -1,4 +1,4 @@
-.atech{
+.atech {
   background-image: url(../../img/20221121_140658.png);
   height: 490px;
   background-repeat: no-repeat;
@@ -12,19 +12,19 @@
   color: #fff;
 }
 
-.atech__text{
+.atech__text {
   text-align: center;
   font-weight: bold;
   padding: 0 20px;
   box-sizing: border-box;
 }
 
-.atech__text--title h1{
+.atech__text--title h1 {
   font-size: 40px;
   font-weight: bold;
 }
 
-.atech__text--more{
+.atech__text--more {
   width: 250px;
   height: 65px;
   font-size: 18px;
@@ -35,33 +35,31 @@
   color: #fff;
   border-radius: 10px;
 }
-.atech__text--more:hover a p{
+.atech__text--more:hover a p {
   background-color: #fff;
   color: #000;
 }
 
-.atech__text--more a p{
+.atech__text--more a p {
   display: block;
   color: #fff;
   transition: all 0.5s;
   border-radius: 10px;
-
 }
 
-
-@media(max-width:1280px){
-  .atech__text--title h1{
+@media (max-width: 1280px) {
+  .atech__text--title h1 {
     font-size: 30px;
   }
-  .atech__text--more{
+  .atech__text--more {
     width: 200px;
     height: 55px;
     line-height: 55px;
     font-size: 14px;
   }
 }
-@media(max-width:1280px){
-  .atech__text--title h1{
+@media (max-width: 1280px) {
+  .atech__text--title h1 {
     font-size: 20px;
   }
 }

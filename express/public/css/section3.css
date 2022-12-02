@@ -29,7 +29,6 @@
   font-size: 40px;
 }
 
-
 /* 패밀리사이트 메인 콘텐츠 */
 .section3Cont {
   width: 100%;
@@ -60,25 +59,24 @@
 .section3Cont_m {
   display: none;
 }
-.upper{
+.upper {
   padding: 0;
 }
-.under{
+.under {
   padding: 0;
 }
-.upper1>ul{
+.upper1 > ul {
   padding: 0;
 }
-.upper2>ul{
+.upper2 > ul {
   padding: 0;
 }
-.under2>ul{
+.under2 > ul {
   padding: 0;
 }
-.under1>ul{
+.under1 > ul {
   padding: 0;
 }
-
 
 @media (max-width: 1280px) {
   .section3_wrap {

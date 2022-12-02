@@ -1,8 +1,8 @@
-.mySwiper{
+.mySwiper {
   display: none;
 }
 
-.swiperMy{
+.swiperMy {
   display: block;
 }
 
@@ -40,15 +40,14 @@
   .mySwiper {
     display: block;
   }
-  .swiperMy{
+  .swiperMy {
     display: none;
   }
 }
-@media(max-width:876px){
+@media (max-width: 876px) {
   .swiper {
     /* width: 867px; */
     margin: 0 auto;
     height: 100%;
   }
-  
 }

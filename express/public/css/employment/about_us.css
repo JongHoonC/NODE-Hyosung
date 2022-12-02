@@ -1,16 +1,14 @@
-.section2__wrap{
+.section2__wrap {
   padding: 100px 200px;
   box-sizing: border-box;
 }
 
-
-
 /* glance */
-.glance{
+.glance {
   display: flex;
   justify-content: space-between;
 }
-.glance>.IMG--box{
+.glance > .IMG--box {
   width: 247px;
   height: 216px;
   background-image: url(../../img/img_intro_01.jpg);
@@ -19,15 +17,14 @@
   background-repeat: no-repeat;
 }
 
-
 /* inpra */
-.inpra{
+.inpra {
   margin-top: 250px;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
 }
-.inpra>.IMG--box{
+.inpra > .IMG--box {
   width: 247px;
   height: 216px;
   background-image: url(../../img/img_intro_02.jpg);
