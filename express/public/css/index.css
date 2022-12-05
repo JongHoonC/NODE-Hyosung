@@ -8,30 +8,31 @@
 @import url(section5.css);
 @import url(footer.css);
 
-section{
+section {
   width: 100%;
   height: 100vh;
 }
 
-.w1200{
+.w1200 {
   width: 1200px;
   margin: 0 auto;
 }
 
-.pointC{
-  color: #4DB6AC;
+.pointC {
+  color: #4db6ac;
 }
 
-.en{
+.en {
   font-family: 'Roboto', sans-serif;
 }
-.ko{
+.ko {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
 ol,
 ul,
-dl,p {
+dl,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -40,21 +41,13 @@ ul a {
   text-decoration: none;
 }
 
-
-
-
-
-@media(max-width:1280px){
-  header{
+@media (max-width: 1280px) {
+  header {
     padding: 0 20px;
     box-sizing: border-box;
   }
 
-  .w1200{
+  .w1200 {
     width: 100%;
   }
 }
-
-
-
-

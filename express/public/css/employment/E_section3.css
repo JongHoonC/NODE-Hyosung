@@ -1,4 +1,4 @@
-.section__wrap3{
+.section__wrap3 {
   display: flex;
   height: auto;
   justify-content: space-between;
@@ -8,7 +8,7 @@
   transition: 0.5s;
 }
 
-.section3__pic{
+.section3__pic {
   background-image: url(../../img/company.png);
   background-size: cover;
   background-position: center center;
@@ -18,24 +18,20 @@
   transition: 0.5s;
 }
 
-
-
-@media(max-width:1280px){
-  .section__wrap3{
+@media (max-width: 1280px) {
+  .section__wrap3 {
     flex-direction: column;
     padding: 40px 20px;
     box-sizing: border-box;
   }
-
 }
 
-@media(max-width:768px){
-  .HyosungDo{
+@media (max-width: 768px) {
+  .HyosungDo {
     width: 100%;
-  } 
-  .section3__pic{
-  width: 286px;
-  height: 260px;
-
+  }
+  .section3__pic {
+    width: 286px;
+    height: 260px;
   }
 }

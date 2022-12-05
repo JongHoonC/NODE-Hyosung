@@ -18,10 +18,10 @@
   padding: 15px 0;
   box-sizing: border-box;
 }
-.hamberger{
+.hamberger {
   background-color: #fff;
 }
-.hamberger > a > .LOGO{
+.hamberger > a > .LOGO {
   padding: 35px 0;
   box-sizing: border-box;
   width: 312px;
@@ -30,17 +30,17 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
-.hamberger > #gnb{
+.hamberger > #gnb {
   display: none;
 }
 
-.hamberger > .h_right> ul >li {
+.hamberger > .h_right > ul > li {
   border-bottom: 2px solid #333;
 }
 .hamberger > .h_right > ul > li > a {
   color: #333;
 }
-.hamberger > .h_right>.h_right_menu> .nav-icon-5 span {
+.hamberger > .h_right > .h_right_menu > .nav-icon-5 span {
   background-color: #333;
 }
 
@@ -174,7 +174,7 @@
 .h_right > ul {
   display: flex;
 }
-.h_right> ul >li {
+.h_right > ul > li {
   margin-left: 22px;
   border-bottom: 2px solid #d9d9d9;
 }
@@ -227,7 +227,7 @@
   top: 13px;
 }
 /* hambuger */
-#mySidenav.SlideNav{
+#mySidenav.SlideNav {
   width: 100%;
 }
 .sidenav {
@@ -242,41 +242,39 @@
   transition: 0.5s;
   margin-top: 100px;
   padding-top: 60px;
-  text-align:center;
+  text-align: center;
 }
 
-#mySidenav> ul{
+#mySidenav > ul {
   display: flex;
   justify-content: space-evenly;
   position: relative;
 }
-#mySidenav> ul>li{
+#mySidenav > ul > li {
   display: block;
   font-size: 24px;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: bold;
-
 }
-#mySidenav >ul > li>ul{
+#mySidenav > ul > li > ul {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#mySidenav >ul > li>ul>li{
+#mySidenav > ul > li > ul > li {
   margin: 7px auto;
 }
 
-#mySidenav> ul >li>ul>li>a{
+#mySidenav > ul > li > ul > li > a {
   font-size: 18px;
 }
 
-ul{
+ul {
   padding-left: 0;
 }
 
-
-.underMenu>li> a {
+.underMenu > li > a {
   text-decoration: none;
   font-size: 16px;
   color: #818181;
@@ -284,12 +282,11 @@ ul{
   transition: 0.3s;
 }
 
-.underMenu>li> a:hover{
+.underMenu > li > a:hover {
   color: #333;
 }
 
-
-.sidenav a:hover{
+.sidenav a:hover {
   color: #333;
 }
 
@@ -302,10 +299,13 @@ ul{
 }
 
 @media screen and (max-height: 450px) {
-.sidenav {padding-top: 15px;}
-.sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
-
 
 @media (max-width: 1440px) {
   #gnb {
@@ -330,7 +330,7 @@ ul{
     padding: 15px 0;
     height: 60px;
   }
-  .hamberger > a > .LOGO{
+  .hamberger > a > .LOGO {
     width: 250px;
     height: 30px;
     background-image: url(../../img/LOGO_m_viewing13.png);
@@ -344,13 +344,13 @@ ul{
   .h_right > ul > li > a {
     font-size: 14px;
   }
-  #mySidenav >ul > li>ul {
+  #mySidenav > ul > li > ul {
     display: none;
   }
-  #mySidenav> ul {
+  #mySidenav > ul {
     flex-direction: column;
   }
-  #mySidenav> ul>li {
+  #mySidenav > ul > li {
     margin-bottom: 50px;
   }
 }

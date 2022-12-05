@@ -1,23 +1,22 @@
-.section2__wrap{
+.section2__wrap {
   padding: 150px 20px;
   box-sizing: border-box;
-
 }
 
-.section2__title{
+.section2__title {
   text-align: center;
   font-weight: bold;
-  font-size: 40px; 
+  font-size: 40px;
 }
 
-.storage{
+.storage {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   text-align: right;
 }
 
-.storage >a{
+.storage > a {
   display: block;
   border: 1px solid #000;
   width: 100px;
@@ -26,59 +25,55 @@
   text-align: center;
   font-weight: bold;
 }
-.write--box{
+.write--box {
   margin: 20px 0;
 }
-.write--box input{
+.write--box input {
   width: 100%;
   border: 1px solid #000;
 }
-.write--box textarea{
+.write--box textarea {
   resize: none;
   margin-top: 20px;
   width: 100%;
 }
 
-.push{
+.push {
   margin-top: 20px;
   display: flex;
   justify-content: flex-end;
 }
 
-
-.registration input{
+.registration input {
   border: 1px solid #000;
   display: block;
   width: 100%;
   height: auto;
   padding: 5px 10px;
-    box-sizing: border-box;
-    background-color: #fff;
-  }
+  box-sizing: border-box;
+  background-color: #fff;
+}
 
-    .cancel{
-      margin-left: 20px;
-    }
-  .cancel a{
-    border: 1px solid #000;
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 5px 10px;
-      box-sizing: border-box;
-    }
-  
+.cancel {
+  margin-left: 20px;
+}
+.cancel a {
+  border: 1px solid #000;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
 
-
-
-a{
+a {
   color: #333;
 }
 
-a:hover{
+a:hover {
   color: #333;
 }
 
-*{
+* {
   outline: none;
 }

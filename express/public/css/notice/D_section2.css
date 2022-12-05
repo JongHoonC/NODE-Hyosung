@@ -1,16 +1,15 @@
-.section2__wrap{
+.section2__wrap {
   padding: 150px 20px 50px 20px;
   box-sizing: border-box;
-
 }
 
-.section2__title{
+.section2__title {
   text-align: center;
   font-weight: bold;
-  font-size: 40px; 
+  font-size: 40px;
 }
 
-.detail__title{
+.detail__title {
   margin-top: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -19,57 +18,56 @@
   border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
 }
-.detail__title h3{
+.detail__title h3 {
   font-size: 18px;
 }
 
-.detail__date{
+.detail__date {
   text-align: right;
   margin: 20px 0;
   font-size: 13px;
 }
 
-.detail__content{
+.detail__content {
   padding-left: 10px;
   height: 400px;
   position: relative;
 }
 
-.file{
+.file {
   position: absolute;
   bottom: 10px;
 }
 
-.reWrite{
+.reWrite {
   margin-top: 20px;
   display: flex;
   justify-content: flex-end;
 }
 
-.reWrite > a{
-
+.reWrite > a {
   display: block;
-  width: 120px;height: 50px;
+  width: 120px;
+  height: 50px;
   border: 1px solid #000;
   line-height: 50px;
   text-align: center;
 }
 
-
-.goList{
+.goList {
   margin-top: 20px;
   display: flex;
   justify-content: center;
 }
 
-.goList > a{
-
+.goList > a {
   display: block;
-  width: 200px;height: 50px;
+  width: 200px;
+  height: 50px;
   border: 1px solid #000;
   line-height: 50px;
   text-align: center;
 }
 
-
-@media(max-width:768px){}
+@media (max-width: 768px) {
+}

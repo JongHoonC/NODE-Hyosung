@@ -1,23 +1,22 @@
-.section5__wrap{
+.section5__wrap {
   padding: 120px 0;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.section5__wrap .HyosungDo__Description p{
+.section5__wrap .HyosungDo__Description p {
   color: #666;
   font-size: 16px;
 }
 
-.section5__wrap .HyosungDo__Description p:nth-child(2){
+.section5__wrap .HyosungDo__Description p:nth-child(2) {
   margin-top: 20px;
   color: #777;
   font-size: 15px;
 }
 
-
-.section5_pic{
+.section5_pic {
   background-image: url(../../img/cont_04_img.png);
   background-size: cover;
   background-position: center center;
@@ -27,29 +26,25 @@
   transition: 0.5s;
 }
 
-
-
-
-@media(max-width:1280px){
-  .section5__wrap{
+@media (max-width: 1280px) {
+  .section5__wrap {
     flex-direction: column;
     padding: 40px 20px;
     box-sizing: border-box;
   }
-  .section5__wrap .HyosungDo__Description p{
+  .section5__wrap .HyosungDo__Description p {
     color: #666;
     font-size: 15px;
   }
-  .section5__wrap .HyosungDo__Description p:nth-child(2){
+  .section5__wrap .HyosungDo__Description p:nth-child(2) {
     margin-top: 20px;
     color: #777;
     font-size: 14px;
   }
-  
 }
 
-@media(max-width:768px){
-  .section5_pic{
+@media (max-width: 768px) {
+  .section5_pic {
     width: 401px;
     height: 157px;
     transition: 0.5s;
