@@ -19,8 +19,16 @@ div,
 p,
 em,
 ol,
-ul,li,dl,dt,dd,a,address,img,
-h1,h2,
+ul,
+li,
+dl,
+dt,
+dd,
+a,
+address,
+img,
+h1,
+h2,
 h3,
 h4,
 h5,
@@ -55,7 +63,7 @@ ul {
 .red_txt {
   color: #ee7272;
 }
-.container{
+.container {
   margin: 0;
   padding-right: 0;
   padding-left: 0;
