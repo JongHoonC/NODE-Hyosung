@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.2.2",
     "cookie-parser": "^1.4.6",
