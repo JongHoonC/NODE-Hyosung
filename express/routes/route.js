@@ -13,6 +13,9 @@ router.get('/emp', (req, res, next) => {
 router.get('/about_us', (req, res, next) => {
   res.render('about_us', {layout: 'layoutEmp'});
 });
+router.get('/history', (req, res, next) => {
+  res.render('history', {layout: 'layouthistory'});
+});
 router.get('/login', (req, res, next) => {
   res.render('login', {layout: 'layoutLogin'});
 });

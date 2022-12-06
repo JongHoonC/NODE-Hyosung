@@ -7,6 +7,7 @@
 .glance {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .glance > .IMG--box {
   width: 247px;
@@ -31,4 +32,8 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.text--box > p {
+  margin-top: 50px;
 }

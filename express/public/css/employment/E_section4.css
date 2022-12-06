@@ -27,6 +27,9 @@
   margin-top: 40px;
   transition: 0.5s;
 }
+.more__box > a > p {
+  transition: 0.5s;
+}
 .more__box:hover {
   background-color: #4db6ac;
   border: 1px solid #4db6ac;
