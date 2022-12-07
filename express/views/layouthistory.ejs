@@ -13,16 +13,14 @@
 
     <!-- 부트스트랩 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
     <link rel="stylesheet" href="css/history/history.css" />
 
     <title>HYOSUNG</title>
   </head>
   <body>
-    <div id="fullpage">
-      <div id="header"><%- include('header') %></div>
-      <%- body %>
-    </div>
+    <div id="header"><%- include('header') %></div>
+    <%- body %>
+    <div id="header"><%- include('footer') %></div>
   </body>
 </html>
 
@@ -33,7 +31,6 @@
 <script>
   AOS.init();
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
 
 <script src="js/index.js"></script>
 <script src="js/src.js"></script>
