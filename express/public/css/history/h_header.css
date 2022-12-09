@@ -1,9 +1,3 @@
-/*pagenation*/
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  background: #4db6ac;
-}
-
 /*헤더*/
 #h_wrap {
   width: 100%;
@@ -18,6 +12,12 @@
   z-index: 9999;
   transition: 0.5s;
 }
+
+#h_wrap > a {
+  display: block;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
 .hamberger {
   background-color: #fff;
 }
@@ -26,7 +26,7 @@
   box-sizing: border-box;
   width: 312px;
   height: 30px;
-  background-image: url(../../img/overLOGO.png);
+  background-image: url(../../img/LOGO_viewing13.png);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -35,23 +35,15 @@
 }
 
 .hamberger > .h_right > ul > li {
-  border-bottom: 2px solid #4db6ac;
+  border-bottom: 2px solid #333;
 }
 .hamberger > .h_right > ul > li > a {
-  color: #4db6ac;
+  color: #333;
 }
 .hamberger > .h_right > .h_right_menu > .nav-icon-5 span {
-  background-color: #4db6ac;
+  background-color: #333;
 }
-/* #h_wrap:hover {
-  background-color: #fff;
-} */
 
-#h_wrap > a {
-  display: block;
-  padding: 15px 0;
-  box-sizing: border-box;
-}
 /*로고*/
 .LOGO {
   padding: 35px 0;
@@ -63,16 +55,16 @@
   background-position: center center;
 }
 /* 호버했을 때 로고 색 */
-/* .active1 > a > .LOGO {
+.active1 > a > .LOGO {
   padding: 35px 0;
   box-sizing: border-box;
   width: 312px;
   height: 30px;
-  background-image: url(../../img/overLOGO.png);
+  background-image: url(../img/overLOGO.png);
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 9000;
-} */
+}
 /* 호버했을 때 로고 색 */
 /* 로고 */
 
@@ -92,9 +84,10 @@
 
 #gnb > ul > li > a {
   font-family: 'Noto Sans KR', sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   color: #d9d9d9;
 }
+
 #drop > li {
   width: 100%;
   height: 100%;
@@ -104,7 +97,6 @@
 
 /* 드롭다운 */
 .cont {
-  display: block;
   visibility: hidden;
   opacity: 0;
   width: 900px;
@@ -114,22 +106,20 @@
   transform: translateX(-50%);
   overflow: hidden;
 }
-
 .cont > li {
-  width: auto;
+  width: 100%;
   height: auto;
   transition: all 0.3s;
-  font-weight: bold;
 }
+
 .cont > li > a {
-  display: block;
   width: 100%;
   height: auto;
   padding: 5px 10px;
   box-sizing: border-box;
   transition: all 0.3s;
   color: #d9d9d9;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .cont.active {
@@ -142,9 +132,39 @@
   overflow: hidden;
   transition: all 0.3s;
 }
+/* 드롭다운 */
+/* 네비게이션 바 */
 
 #employment {
   width: 400px;
+}
+
+/* focus */
+.focus {
+  background-color: #fff;
+}
+.focus > a > .LOGO {
+  background-image: url(../../img/LOGO_viewing13.png);
+}
+.focus #drop > li > a {
+  color: #333;
+  transition: 0.5s;
+}
+.focus #drop > li > ul > li > a {
+  color: #333;
+  transition: 0.5s;
+}
+
+.focus > .h_right > ul > li {
+  border-bottom: 2px solid #333;
+  transition: 0.5s;
+}
+.focus > .h_right > ul > li > a {
+  color: #333;
+  transition: 0.5s;
+}
+.focus > .h_right > .h_right_menu > .nav-icon-5 > span {
+  background-color: #333;
 }
 
 /*오른쪽 메뉴*/
@@ -177,11 +197,11 @@
   height: 30px;
   margin-left: 20px;
   position: relative;
+  cursor: pointer;
   display: inline-block;
-  cursor: auto;
 }
 .nav-icon-5 span {
-  background-color: #fff;
+  background-color: #d9d9d9;
   position: absolute;
   border-radius: 2px;
   transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
@@ -213,7 +233,6 @@
   top: 13px;
 }
 /* hambuger */
-
 #mySidenav.SlideNav {
   width: 100%;
 }
@@ -231,6 +250,7 @@
   padding-top: 60px;
   text-align: center;
 }
+
 #mySidenav > ul {
   display: flex;
   justify-content: space-evenly;
@@ -246,6 +266,7 @@
   margin-top: 30px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 #mySidenav > ul > li > ul > li {
   margin: 7px auto;
@@ -253,6 +274,10 @@
 
 #mySidenav > ul > li > ul > li > a {
   font-size: 18px;
+}
+
+ul {
+  padding-left: 0;
 }
 
 .underMenu > li > a {
@@ -264,6 +289,10 @@
 }
 
 .underMenu > li > a:hover {
+  color: #333;
+}
+
+.sidenav a:hover {
   color: #333;
 }
 
@@ -296,34 +325,25 @@
     background-image: url(../../img/LOGO_m.png);
     padding: 15px 0;
   }
-  .hamberger > a > .LOGO {
-    width: 250px;
-    background-image: url(../../img/headerLOGO.png);
-    padding: 15px 0;
-    box-sizing: border-box;
-  }
-  .active1 > a > .LOGO {
-    width: 250px;
-    background-image: url(../../img/headerLOGO.png);
-    padding: 15px 0;
-    box-sizing: border-box;
+  .focus a .LOGO {
+    background-image: url(../../img/LOGO_m_viewing13.png);
   }
   #h_wrap {
     height: 60px;
     padding: 0 20px;
   }
-  .sidenav {
-    margin-top: 60px;
-  }
   .h_right {
     padding: 15px 0;
     height: 60px;
   }
-  .fp-viewing-2 > #h_wrap > a > .LOGO {
-    background-image: url(../../img/headerLOGO.png);
+  .hamberger > a > .LOGO {
+    width: 250px;
+    height: 30px;
+    background-image: url(../../img/LOGO_m_viewing13.png);
+    padding: 15px 0;
   }
-  .fp-viewing-4 > #h_wrap > a > .LOGO {
-    background-image: url(../../img/headerLOGO.png);
+  .sidenav {
+    margin-top: 60px;
   }
 }
 @media (max-width: 1000px) {
@@ -338,31 +358,5 @@
   }
   #mySidenav > ul > li {
     margin-bottom: 50px;
-  }
-}
-
-@media (max-width: 768px) {
-  .LOGO {
-    background-image: url(../../img/headerLOGO.png);
-  }
-  #h_wrap {
-    background-color: #fff;
-  }
-  .h_right > ul > li {
-    border-bottom: 2px solid #4db6ac;
-  }
-  .h_right > ul > li > a {
-    color: #4db6ac;
-  }
-  .h_right_menu > span {
-    border: 1px solid #4db6ac;
-  }
-  .nav-icon-5 > span {
-    background-color: #4db6ac;
-    position: absolute;
-    border-radius: 2px;
-    transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-    width: 100%;
-    transition-duration: 500ms;
   }
 }

@@ -1,5 +1,6 @@
-@import url(header.css);
+@import url(h_header.css);
 @import url(h_section1.css);
+@import url(h_section2.css);
 @import url(footer.css);
 
 a {

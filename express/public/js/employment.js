@@ -4,6 +4,7 @@ const conts = document.querySelectorAll('.cont');
 
 let h_wrap = document.getElementById('h_wrap');
 let gnb = document.getElementById('gnb');
+let fixedNav = document.getElementById('fixedNav');
 
 gnb.addEventListener('mouseover', event => {
   h_wrap.style.height = '180px';
@@ -68,3 +69,22 @@ function scrollBtn() {
     h_wrap.classList.remove('focus');
   }
 }
+
+// window.onscroll = function () {
+//   fixedNav();
+// };
+// function fixedNav() {
+// if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+//   fixedNav.classList.add('active');
+// } else {
+//   fixedNav.classList.remove('active');
+//   }
+// }
+
+window.addEventListener('scroll', event => {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    fixedNav.classList.add('active');
+  } else {
+    fixedNav.classList.remove('active');
+  }
+});
