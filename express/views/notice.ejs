@@ -30,86 +30,17 @@
           <li class="date">등록일자</li>
           <li class="N_file">첨부파일</li>
         </ul>
+        <% rows.forEach((row,index)=> { %>
         <ul class="list">
-          <li class="NO">10</li>
-          <li class="title"><a href="/detail">효성중공업 22.3분기 경영실적</a></li>
-          <li class="date">2022.10.28</li>
+          <li class="NO"><%= row.id %></li>
+          <li class="title"><a href="/detail"><%= row.title %></a></li>
+          <li class="date"><%= row.create_time %></li>
+          <input type="hidden" value="<%= row.content %> " name="content" />
           <li class="N_file">
             첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>
           </li>
         </ul>
-        <ul class="list">
-          <li class="NO">9</li>
-          <li class="title"><a href="">효성중공업 22.2분기 경영실적</a></li>
-          <li class="date">2022.07.29</li>
-          <li class="N_file">
-            첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>
-          </li>
-        </ul>
-        <ul class="list">
-          <li class="NO">8</li>
-          <li class="title"><a href="">효성중공업 22.1분기 경영실적</a></li>
-          <li class="date">2022.04.29</li>
-          <li class="N_file">
-            첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>
-          </li>
-        </ul>
-        <ul class="list">
-          <li class="NO">7</li>
-          <li class="title"><a href="">제4기 결산공고(연결)</a></li>
-          <li class="date">2022.03.18</li>
-          <li class="N_file">
-            첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>
-          </li>
-        </ul>
-        <ul class="list">
-          <li class="NO">6</li>
-          <li class="title"><a href="">제4기 결산공고(별도)</a></li>
-          <li class="date">2022.03.18</li>
-          <li class="N_file">
-            첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>
-          </li>
-        </ul>
-        <ul class="list">
-          <li class="NO">5</li>
-          <li class="title"><a href="">제4기 주주총회 의결권 대리행사 권유 위임장</a></li>
-          <li class="date">2022.03.02</li>
-          <li class="N_file">
-            첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>
-          </li>
-        </ul>
-        <ul class="list">
-          <li class="NO">4</li>
-          <li class="title"><a href="">효성중공업 21.4분기 경영실적</a></li>
-          <li class="date">2022.01.26</li>
-          <li class="N_file">
-            첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>
-          </li>
-        </ul>
-        <ul class="list">
-          <li class="NO">3</li>
-          <li class="title"><a href="">효성중공업 21.3분기 경영실적</a></li>
-          <li class="date">2021.10.29</li>
-          <li class="N_file">
-            첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>
-          </li>
-        </ul>
-        <ul class="list">
-          <li class="NO">2</li>
-          <li class="title"><a href="">효성중공업 21.2분기 경영실적</a></li>
-          <li class="date">2021.07.30</li>
-          <li class="N_file">
-            첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>
-          </li>
-        </ul>
-        <ul class="list">
-          <li class="NO">1</li>
-          <li class="title"><a href="">효성중공업 21.1분기 경영실적</a></li>
-          <li class="date">2021.04.30</li>
-          <li class="N_file">
-            첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>
-          </li>
-        </ul>
+        <% }); %>
         <div class="root--write">
           <a href="/write">
             <p>작성</p>

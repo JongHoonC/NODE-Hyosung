@@ -10,30 +10,33 @@
     </div>
   </section>
   <section>
-    <div class="section2__wrap ko w1200">
-      <div class="section2__title ko">
-        <h1>공고</h1>
+    <form action="/">
+      <div class="section2__wrap ko w1200">
+        <div class="section2__title ko">
+          <input type="hidden" name="id" value="<%= row.id %> " />
+          <h1>공고</h1>
+        </div>
+        <div class="detail__title">
+          <h3><%= row.title %></h3>
+        </div>
+        <div class="detail__date">
+          <p>관리자 | <%= row.create_time %> |</p>
+        </div>
+        <div class="detail__content">
+          <p><%= row.content %></p>
+          <p class="file">첨부파일 다운로드 <img src="img/save.png" alt="" /></p>
+        </div>
+        <div class="reWrite">
+          <a href="/write">
+            <p>수정</p>
+          </a>
+        </div>
+        <div class="goList">
+          <a href="/notice">
+            <p>목록으로</p>
+          </a>
+        </div>
       </div>
-      <div class="detail__title">
-        <h3>효성중공업 22.3분기 경영실적</h3>
-      </div>
-      <div class="detail__date">
-        <p>관리자 | 2022.11.17 | 조회 2093</p>
-      </div>
-      <div class="detail__content">
-        <p>효성중공업 22.3분기 경영실적 자료 입니다.</p>
-        <p class="file">첨부파일 다운로드 <img src="img/save.png" alt="" /></p>
-      </div>
-      <div class="reWrite">
-        <a href="/write">
-          <p>수정</p>
-        </a>
-      </div>
-      <div class="goList">
-        <a href="/notice">
-          <p>목록으로</p>
-        </a>
-      </div>
-    </div>
+    </form>
   </section>
 </main>

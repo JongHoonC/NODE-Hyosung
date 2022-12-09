@@ -1,7 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const multer = require('multer');
 const path = require('path');
 const {send} = require('process');
+const db = require('./../db.js');
+const fs = require('fs');
 
 router.get('/', (req, res, next) => {
   res.render('index');
@@ -22,43 +25,61 @@ router.get('/login', (req, res, next) => {
 router.get('/sign-up', (req, res, next) => {
   res.render('sign-up', {layout: 'layoutLogin'});
 });
-router.get('/notice', (req, res, next) => {
-  res.render('notice', {layout: 'layoutNotice'});
-});
+// router.get('/notice', (req, res, next) => {
+//   res.render('notice', {layout: 'layoutNotice'});
+// });
 router.get('/write', (req, res, next) => {
   res.render('write', {layout: 'layoutNotice'});
 });
-router.get('/detail', (req, res, next) => {
-  res.render('detail', {layout: 'layoutNotice'});
-});
+// router.get('/detail', (req, res, next) => {
+//   res.render('detail', {layout: 'layoutNotice'});
+// });
 router.get('/writeList', (req, res, next) => {
   res.render('writeList', {layout: 'layoutNotice'});
 });
 
+router.get('/notice', (req, res, next) => {
+  db.getNotice(rows => {
+    res.render('notice', {rows: rows, layout: 'layoutNotice'});
+  });
+});
+
+// 공지 작성 페이지
 router.post('/writeList', (req, res, next) => {
   let param = JSON.parse(JSON.stringify(req.body));
-  res.render('writeList.ejs', {layout: 'layoutNotice', data: param});
-  console.log(param);
+  let title = param['title'];
+  let content = param['content'];
+  db.insertNotice(title, content, () => {
+    res.redirect('/notice');
+  });
 });
-router.post('/goLOGIN', (req, res, next) => {
-  let paramL = JSON.parse(JSON.stringify(req.body));
-  let id = paramL['userID'];
-  let pass = paramL['userPW'];
-  console.log(`userID : ${id}`);
-  console.log(`userPW : ${pass}`);
+
+router.get('/detail', (req, res) => {
+  let id = req.query.user;
+  db.detail(id, row => {
+    res.render('detail', {row: row[0], layout: 'layoutNotice'});
+    //파일명과 맞아야함
+  });
 });
-router.post('/GOsign-up', (req, res, next) => {
-  let paramS = JSON.parse(JSON.stringify(req.body));
-  let id = paramS['id'];
-  let name = paramS['name'];
-  let pw = paramS['pw'];
-  let mail1 = paramS['mail'];
-  let number = paramS['phoneNum'];
-  console.log(`userID : ${id}`);
-  console.log(`userName : ${name}`);
-  console.log(`userPW : ${pw}`);
-  console.log(`userEmail : ${mail1}`);
-  console.log(`userPhonenumber : ${number}`);
-});
+// router.post('/goLOGIN', (req, res, next) => {
+//   let paramL = JSON.parse(JSON.stringify(req.body));
+//   let id = paramL['userID'];
+//   let pass = paramL['userPW'];
+//   console.log(`userID : ${id}`);
+//   console.log(`userPW : ${pass}`);
+// });
+// router.post('/GOsign-up', (req, res, next) => {
+//   let paramS = JSON.parse(JSON.stringify(req.body));
+//   let id = paramS['id'];
+//   let name = paramS['name'];
+//   let pw = paramS['pw'];
+//   let mail1 = paramS['mail'];
+//   let number = paramS['phoneNum'];
+//   console.log(`userID : ${id}`);
+//   console.log(`userName : ${name}`);
+//   console.log(`userPW : ${pw}`);
+//   console.log(`userEmail : ${mail1}`);
+//   console.log(`userPhonenumber : ${number}`);
+// });
 
 module.exports = router;
