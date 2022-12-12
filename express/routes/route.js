@@ -25,15 +25,14 @@ router.get('/login', (req, res, next) => {
 router.get('/sign-up', (req, res, next) => {
   res.render('sign-up', {layout: 'layoutLogin'});
 });
-// router.get('/notice', (req, res, next) => {
-//   res.render('notice', {layout: 'layoutNotice'});
-// });
+router.get('/sign-up-next', (req, res, next) => {
+  res.render('sign-up-next', {layout: 'layoutLogin'});
+});
+
 router.get('/write', (req, res, next) => {
   res.render('write', {layout: 'layoutNotice'});
 });
-// router.get('/detail', (req, res, next) => {
-//   res.render('detail', {layout: 'layoutNotice'});
-// });
+
 router.get('/writeList', (req, res, next) => {
   res.render('writeList', {layout: 'layoutNotice'});
 });
@@ -54,13 +53,47 @@ router.post('/writeList', (req, res, next) => {
   });
 });
 
+//공지사항 상세 페이지
 router.get('/detail', (req, res) => {
-  let id = req.query.user;
+  let id = req.query.id;
   db.detail(id, row => {
     res.render('detail', {row: row[0], layout: 'layoutNotice'});
     //파일명과 맞아야함
   });
 });
+
+// 삭제 페이지
+router.get('/delete_notice', (req, res) => {
+  //sub1의 onclick과 맞아야함
+  let id = req.query.id;
+  db.deletetNotice(id, () => {
+    res.redirect('/notice');
+    //파일명과 맞아야함
+  });
+});
+
+//공지사항 수정페이지로 넘어가는 과정
+router.get('/update_notice', (req, res) => {
+  let id = req.query.id;
+  db.getUpdateNotice(id, row => {
+    res.render('notice_update', {row: row[0], layout: 'layoutNotice'});
+    //파일명과 맞아야함
+  });
+});
+
+//공지사항 수정
+router.post('/update_notice', (req, res) => {
+  let param = JSON.parse(JSON.stringify(req.body));
+  let id = param['id'];
+  let title = param['title'];
+  let content = param['content'];
+  let create_time = param['create_time'];
+  console.log(create_time);
+  db.updateNotice(id, title, content, create_time, () => {
+    res.redirect('/notice');
+  });
+});
+
 // router.post('/goLOGIN', (req, res, next) => {
 //   let paramL = JSON.parse(JSON.stringify(req.body));
 //   let id = paramL['userID'];
@@ -68,18 +101,20 @@ router.get('/detail', (req, res) => {
 //   console.log(`userID : ${id}`);
 //   console.log(`userPW : ${pass}`);
 // });
-// router.post('/GOsign-up', (req, res, next) => {
-//   let paramS = JSON.parse(JSON.stringify(req.body));
-//   let id = paramS['id'];
-//   let name = paramS['name'];
-//   let pw = paramS['pw'];
-//   let mail1 = paramS['mail'];
-//   let number = paramS['phoneNum'];
-//   console.log(`userID : ${id}`);
-//   console.log(`userName : ${name}`);
-//   console.log(`userPW : ${pw}`);
-//   console.log(`userEmail : ${mail1}`);
-//   console.log(`userPhonenumber : ${number}`);
-// });
+
+// 회원가입 페이지
+router.post('/sign-up', (req, res, next) => {
+  let paramS = JSON.parse(JSON.stringify(req.body));
+  let id = paramS['id'];
+  let name = paramS['name'];
+  let pw = paramS['pw'];
+  let mail = paramS['mail'];
+  let phoneNum = paramS['phoneNum'];
+  console.log(id);
+  console.log(pw);
+  db.userSignUp(id, name, pw, mail, phoneNum, () => {
+    res.redirect('/sign-up-next');
+  });
+});
 
 module.exports = router;

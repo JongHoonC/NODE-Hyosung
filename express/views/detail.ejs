@@ -27,8 +27,11 @@
           <p class="file">첨부파일 다운로드 <img src="img/save.png" alt="" /></p>
         </div>
         <div class="reWrite">
-          <a href="/write">
+          <a href="/update_notice?id=<%= row.id %> ">
             <p>수정</p>
+          </a>
+          <a href="/delete_notice?id=<%= row.id %> ">
+            <p>삭제</p>
           </a>
         </div>
         <div class="goList">

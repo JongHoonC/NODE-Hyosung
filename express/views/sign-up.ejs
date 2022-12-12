@@ -1,10 +1,10 @@
-<main id="sign-up">
-  <div class="wrap wd668">
-    <div class="container">
-      <div class="form_txtInput">
-        <h2 class="sub_tit_txt">회원가입</h2>
-        <p class="exTxt">회원가입시 이메일 인증을 반드시 진행하셔야 합니다.</p>
-        <form action="/GOsign-up" method="post" onsubmit="return Validation();">
+<form action="/sign-up" method="post" onsubmit="return Validation();">
+  <main id="sign-up">
+    <div class="wrap wd668">
+      <div class="container">
+        <div class="form_txtInput">
+          <h2 class="sub_tit_txt">회원가입</h2>
+          <p class="exTxt">회원가입시 이메일 인증을 반드시 진행하셔야 합니다.</p>
           <div class="join_form">
             <table>
               <colgroup>
@@ -18,7 +18,7 @@
                 </tr>
                 <tr>
                   <th><span>이름</span></th>
-                  <td><input type="text" id="name" name="name" placeholder="" /></td>
+                  <td><input type="text" id="name" name="name" placeholder="이름을 입력해주세요" /></td>
                 </tr>
                 <tr>
                   <th><span>비밀번호</span></th>
@@ -73,11 +73,11 @@
             <!-- <input type="submit" value="다음" /> -->
             <input type="submit" id="GOLOGIN" onclick="Validation()" value="다음" class="ko" />
           </div>
-        </form>
+        </div>
+        <!-- form_txtInput E -->
       </div>
-      <!-- form_txtInput E -->
+      <!-- content E-->
     </div>
-    <!-- content E-->
-  </div>
-  <!-- container E -->
-</main>
+    <!-- container E -->
+  </main>
+</form>

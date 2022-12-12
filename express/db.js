@@ -38,8 +38,43 @@ function detail(id, callback) {
   });
 }
 
+//삭제 하기
+function deletetNotice(id, callback) {
+  connection.query(`DELETE FROM notice_table WHERE id='${id}'`, err => {
+    if (err) throw err;
+    callback();
+  });
+}
+
+// 공지사항 수정
+function updateNotice(id, title, content, callback) {
+  connection.query(`UPDATE notice_table SET title='${title}', content='${content}', create_time=NOW() WHERE id='${id}'`, err => {
+    if (err) throw err;
+    callback();
+  });
+}
+
+// 공지사항 수정 페이지로 넘어가는 과정
+function getUpdateNotice(id, callback) {
+  connection.query(`select * from notice_table where id='${id}'`, (err, row) => {
+    if (err) throw err;
+    callback(row);
+  });
+}
+
+// 회원가입 페이지
+function userSignUp(id, name, pw, mail, phoneNum, callback) {
+  connection.query(`INSERT INTO user_list(id, name, pw, mail, phoneNum, create_time) values('${id}','${name}','${pw}','${mail}',${phoneNum},NOW())`, err => {
+    if (err) throw err;
+    callback();
+  });
+}
 module.exports = {
   getNotice,
   insertNotice,
   detail,
+  updateNotice,
+  getUpdateNotice,
+  deletetNotice,
+  userSignUp,
 };

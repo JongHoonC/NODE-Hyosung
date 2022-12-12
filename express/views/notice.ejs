@@ -16,7 +16,7 @@
       </div>
       <div class="convenience">
         <div class="notice__number ko">
-          <p>총 <span class="pointC">10건</span> 의 글이 등록되어 있습니다.</p>
+          <p>총 <span class="pointC">12건</span> 의 글이 등록되어 있습니다.</p>
         </div>
         <div class="notice__search ko">
           <input type="text" placeholder="검색어를 입력해 주세요" />
@@ -30,23 +30,26 @@
           <li class="date">등록일자</li>
           <li class="N_file">첨부파일</li>
         </ul>
-        <% rows.forEach((row,index)=> { %>
-        <ul class="list">
-          <li class="NO"><%= row.id %></li>
-          <li class="title"><a href="/detail"><%= row.title %></a></li>
-          <li class="date"><%= row.create_time %></li>
-          <input type="hidden" value="<%= row.content %> " name="content" />
-          <li class="N_file">
-            첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>
-          </li>
-        </ul>
-        <% }); %>
-        <div class="root--write">
-          <a href="/write">
-            <p>작성</p>
-          </a>
+        <div id="data-container">
+          <% rows.forEach((row,index)=> { %>
+          <ul class="list">
+            <li class="NO"><%= row.id %></li>
+            <li class="title"><a href="/detail?id=<%= row.id %> "><%= row.title %></a></li>
+            <li class="date"><%= row.create_time %></li>
+            <input type="hidden" value="<%= row.content %> " name="content" />
+            <li class="N_file">
+              첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>
+            </li>
+          </ul>
+          <% }); %>
+          <div class="root--write">
+            <a href="/write">
+              <p>작성</p>
+            </a>
+          </div>
         </div>
       </div>
+      <div id="pagination-container"></div>
     </div>
   </section>
 </main>
