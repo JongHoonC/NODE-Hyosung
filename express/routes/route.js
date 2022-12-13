@@ -25,9 +25,6 @@ router.get('/login', (req, res, next) => {
 router.get('/sign-up', (req, res, next) => {
   res.render('sign-up', {layout: 'layoutLogin'});
 });
-router.get('/sign-up-next', (req, res, next) => {
-  res.render('sign-up-next', {layout: 'layoutLogin'});
-});
 
 router.get('/write', (req, res, next) => {
   res.render('write', {layout: 'layoutNotice'});
@@ -94,13 +91,19 @@ router.post('/update_notice', (req, res) => {
   });
 });
 
-// router.post('/goLOGIN', (req, res, next) => {
-//   let paramL = JSON.parse(JSON.stringify(req.body));
-//   let id = paramL['userID'];
-//   let pass = paramL['userPW'];
-//   console.log(`userID : ${id}`);
-//   console.log(`userPW : ${pass}`);
-// });
+// 로그인
+router.post('/goLOGIN', (req, res, next) => {
+  let paramL = JSON.parse(JSON.stringify(req.body));
+  let id = paramL['id'];
+  let pw = paramL['pw'];
+  db.loginCheck(id, pw, result => {
+    if (result.length > 0) {
+      res.redirect('/');
+    } else {
+      res.send(`<script>alert('로그인정보가 일치하지 않습니다'); document.location.href="/login";</script>`);
+    }
+  });
+});
 
 // 회원가입 페이지
 router.post('/sign-up', (req, res, next) => {
@@ -110,10 +113,17 @@ router.post('/sign-up', (req, res, next) => {
   let pw = paramS['pw'];
   let mail = paramS['mail'];
   let phoneNum = paramS['phoneNum'];
-  console.log(id);
-  console.log(pw);
   db.userSignUp(id, name, pw, mail, phoneNum, () => {
-    res.redirect('/sign-up-next');
+    res.render('sign-up-next', {id: id, layout: 'layoutLogin'});
+    //past 에서 특정 값만 넘겨줄 때 row 대신 넘겨줄 값을 써준 후 <% row.id %> 가 아닌 <% id %> 를 써준다
+  });
+});
+
+// 회원가입 다음창
+router.get('/sign-up-next', (req, res) => {
+  let id = req.query.id;
+  db.signUpNext(id, row => {
+    res.render('sign-up-next', {row: row[0], layout: 'layoutLogin'});
   });
 });
 

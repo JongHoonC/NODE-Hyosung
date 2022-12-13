@@ -69,6 +69,23 @@ function userSignUp(id, name, pw, mail, phoneNum, callback) {
     callback();
   });
 }
+
+// 회원가입 다음창
+function signUpNext(id, callback) {
+  connection.query(`SELECT * FROM user_list WHERE id='${id}'`, (err, row) => {
+    if (err) throw err;
+    callback(row);
+    console.log(`${id}`);
+  });
+}
+
+// 로그인
+function loginCheck(id, pw, callback) {
+  connection.query(`SELECT * FROM user_list WHERE id='${id}' and pw='${pw}'`, (err, results) => {
+    if (err) throw err;
+    callback(results);
+  });
+}
 module.exports = {
   getNotice,
   insertNotice,
@@ -77,4 +94,6 @@ module.exports = {
   getUpdateNotice,
   deletetNotice,
   userSignUp,
+  signUpNext,
+  loginCheck,
 };

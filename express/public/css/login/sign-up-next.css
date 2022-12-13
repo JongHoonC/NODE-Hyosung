@@ -16,7 +16,7 @@
 }
 
 .sign-up-next--content > .logo {
-  background-image: url(../../img/nextLOGO.png);
+  background-image: url(../../img/headerLOGO.png);
   width: 250px;
   height: 24px;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 }
 .sign-up-next--content > h1 {
   font-size: 30px;
-  color: #0d1d41;
+  color: #4db6ac;
   font-weight: 600;
   margin: 40px 0;
 }
@@ -37,7 +37,7 @@
 }
 .sign-up-next--content > h6 {
   font-size: 16px;
-  color: #2e4462;
+  color: #4db6ac;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -45,8 +45,44 @@
   margin: 20px 0;
 }
 
+.controlBtn {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.controlBtn > article > p > a {
+  display: block;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid rgb(180, 180, 180);
+  color: #333;
+  transition: all 0.5s;
+}
+.controlBtn > article > p > a:hover {
+  background-color: #4db6ac;
+  color: #fff;
+}
+
 @media (max-width: 1200px) {
   #sign-up-next > section {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .controlBtn {
+    width: 100%;
+    justify-content: center;
+  }
+  .controlBtn > article:nth-child(2) {
+    margin-left: 40px;
+  }
+
+  .sign-up-next--content {
+    padding: 125px 20px;
   }
 }

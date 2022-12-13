@@ -102,6 +102,7 @@ a > .LOGO_m {
 }
 .dropdown-item {
   color: #333;
+  width: auto;
 }
 
 @media (max-width: 1280px) {

@@ -96,6 +96,9 @@
 .fp-viewing-6 > #h_wrap {
   background-color: #fff;
 }
+.fp-viewing-6 > #h_wrap > a > .LOGO {
+  background-image: url(../img/overLOGO.png);
+}
 .fp-viewing-6 > #h_wrap > #gnb > ul > li > a {
   color: #4db6ac;
 }

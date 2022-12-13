@@ -325,6 +325,9 @@
   .fp-viewing-4 > #h_wrap > a > .LOGO {
     background-image: url(../img/headerLOGO.png);
   }
+  .fp-viewing-6 > #h_wrap > a > .LOGO {
+    background-image: url(../img/headerLOGO.png);
+  }
 }
 @media (max-width: 1000px) {
   .h_right > ul > li > a {

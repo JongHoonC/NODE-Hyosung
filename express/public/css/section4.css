@@ -58,7 +58,9 @@
 /*뉴스박스*/
 
 /* 더보기 */
-.section4__more {
+
+.section4__more > a {
+  display: block;
   width: 155px;
   height: 48px;
   border: 1px solid #4db6ac;
@@ -69,13 +71,13 @@
   align-items: center;
   color: #4db6ac;
 }
-.section4__more span {
+.section4__more > a > span {
   margin-left: 10px;
 }
-.section4__more span img {
+.section4__more > a > span > img {
   display: block;
 }
-.section4__more p {
+.section4__more > a > p {
   text-decoration: none !important;
 }
 
