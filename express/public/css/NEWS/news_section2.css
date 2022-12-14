@@ -1,0 +1,86 @@
+.section2__wrap {
+  padding: 130px 20px;
+  box-sizing: border-box;
+}
+
+.section2__title > h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+a.news_wrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d8d8d8;
+  align-items: center;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+a.news_wrap:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.news__thum {
+  width: 250px;
+  height: auto;
+}
+.news__thum > img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.news__text-wrap {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news__subject > p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #333;
+}
+
+.news__date > p {
+  font-size: 15px;
+  color: #999;
+  text-align: right;
+  margin-left: auto;
+}
+
+.root--write {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  text-align: right;
+}
+.root--write > a {
+  display: block;
+  border: 1px solid #cfcfcf;
+  width: 100px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+}
+a {
+  color: #333;
+}
+a:hover {
+  color: #333;
+}
+
+@media (max-width: 1050px) {
+  .news__text-wrap {
+    flex-direction: column;
+    text-align-last: left;
+  }
+}

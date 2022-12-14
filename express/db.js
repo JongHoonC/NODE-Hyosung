@@ -16,7 +16,7 @@ connection.connect(function (err) {
 
 //notice 값 불러오기
 function getNotice(callback) {
-  connection.query('SELECT * FROM notice_table ORDER BY id ASC', (err, rows) => {
+  connection.query('SELECT * FROM notice_table ORDER BY id DESC', (err, rows) => {
     if (err) throw err;
     callback(rows);
   });
@@ -75,7 +75,6 @@ function signUpNext(id, callback) {
   connection.query(`SELECT * FROM user_list WHERE id='${id}'`, (err, row) => {
     if (err) throw err;
     callback(row);
-    console.log(`${id}`);
   });
 }
 
@@ -86,6 +85,23 @@ function loginCheck(id, pw, callback) {
     callback(results);
   });
 }
+
+// 뉴스 메인
+function getnews(callback) {
+  connection.query('SELECT * FROM news_table ORDER BY id DESC', (err, rows) => {
+    if (err) throw err;
+    callback(rows);
+  });
+}
+
+// 뉴스 작성
+function insertNews(img, title, create_time, callback) {
+  connection.query(`INSERT INTO news_table(img,title,create_time,) VALUES('${img}',${title},'${create_time}')`, err => {
+    if (err) throw err;
+    callback();
+  });
+}
+
 module.exports = {
   getNotice,
   insertNotice,
@@ -96,4 +112,6 @@ module.exports = {
   userSignUp,
   signUpNext,
   loginCheck,
+  getnews,
+  insertNews,
 };

@@ -1,0 +1,43 @@
+<main id="news">
+  <!-- 섹션1 -->
+  <section>
+    <div class="section1__bg-wrap">
+      <div class="section1__bg-img"></div>
+      <div class="section1__text ko">
+        <h1>뉴스센터</h1>
+        <h4>효성중공업이 전하는 다양한 활동이야기</h4>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="section2__wrap w1200">
+      <div class="section2__title">
+        <h1 class="en">NEWS</h1>
+      </div>
+      <div class="section__2--newsList">
+        <% rows.forEach((row,index)=> { %>
+        <a href="#" class="news_wrap">
+          <div class="news__thum">
+            <img src="<%= row.img %> " alt="" />
+          </div>
+          <div class="news__text-wrap">
+            <div class="news__subject">
+              <p><%= row.title %></p>
+            </div>
+            <div class="news__date">
+              <p><%= row.create_time %></p>
+              <input type="hidden" name="content" value="<%= row.content %> " />
+              <input type="hidden" name="id" value="<%= row.id %> " />
+            </div>
+          </div>
+        </a>
+        <% }); %>
+      </div>
+      <div class="root--write">
+        <a href="/news_write">
+          <p>작성</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>

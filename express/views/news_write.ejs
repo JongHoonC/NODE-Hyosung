@@ -1,0 +1,43 @@
+<main id="write">
+  <!-- 섹션1 -->
+  <section>
+    <div class="section1__bg-wrap">
+      <div class="section1__bg-img"></div>
+      <div class="section1__text ko">
+        <h1>뉴스센터</h1>
+        <h4>효성중공업이 전하는 다양한 활동이야기</h4>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="section2__wrap w1200">
+      <div class="section2__title ko">
+        <h1>NEWS</h1>
+      </div>
+      <div class="storage">
+        <a href="">
+          <p>임시저장</p>
+        </a>
+      </div>
+      <form action="/writeList" method="post" enctype="multipart/form-data">
+        <div class="write--box">
+          <input type="text" name="title" placeholder="제목" />
+          <textarea name="content" id="content" cols="30" rows="10" placeholder="내용"></textarea>
+        </div>
+        <div class="rootName">
+          <input type="file" name="img" />
+        </div>
+        <div class="push">
+          <div class="registration">
+            <input type="submit" id="button" value="작성" />
+          </div>
+          <div class="cancel">
+            <a href="/news">
+              <p>취소</p>
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>

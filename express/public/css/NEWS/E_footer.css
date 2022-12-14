@@ -1,0 +1,154 @@
+/* 푸터 */
+footer {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 40px;
+  background-color: #fff;
+  color: #777777;
+  border-top: 1px solid #777;
+}
+
+.footer__wraper {
+  display: flex;
+  align-items: center;
+}
+/*LOGO*/
+a > .LOGO_m {
+  display: block;
+}
+.LOGO_m {
+  padding: 35px 0;
+  box-sizing: border-box;
+  width: 250px;
+  height: 24px;
+  background-image: url(../../img/footer_LOGO.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*footer leftBox*/
+.footer__leftBox {
+  width: 50%;
+  height: 100%;
+}
+.footer__content {
+  font-size: 13px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.footer__content h6 {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.footer__copyright > h6 {
+  margin-top: 20px;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*footer rightBox*/
+.footer__rightBox {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.rightBox__content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.rightBox__text h5 {
+  text-align: right;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*sns__list*/
+.sns__list {
+  display: flex;
+  align-items: center;
+}
+.sns__list a {
+  display: block;
+  margin-left: 10px;
+}
+.sns__list a img {
+  display: block;
+}
+
+.dropup-center {
+  text-align: right;
+  margin-left: 20px;
+}
+
+.rightBox__content > .footer__copyright {
+  display: none;
+}
+.dropdown-toggle {
+  background-color: transparent;
+  color: #777777;
+}
+
+.dropdown-menu.show {
+  background-color: #fff;
+}
+.dropdown-item {
+  color: #333;
+  width: auto;
+}
+
+@media (max-width: 1280px) {
+  footer {
+    padding: 20px 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 876px) {
+  .footer__wraper {
+    flex-direction: column;
+  }
+  .footer__leftBox {
+    width: 100%;
+  }
+  .footer__leftBox > .footer__copyright {
+    display: none;
+  }
+  .footer__rightBox {
+    width: 100%;
+    text-align-last: left;
+  }
+  .rightBox__content > .footer__copyright {
+    display: block;
+    margin-right: 250px;
+  }
+  .rightBox__content {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .footer__content {
+    font-size: 13px;
+  }
+  .footer__content h6 {
+    margin: 5px 0;
+    font-size: 12px;
+  }
+  .rightBox__text h5 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rightBox__content > .footer__copyright {
+    width: 100%;
+    margin: 0;
+  }
+}

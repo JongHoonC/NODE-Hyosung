@@ -35,7 +35,7 @@
           <ul class="list">
             <li class="NO"><%= row.id %></li>
             <li class="title"><a href="/detail?id=<%= row.id %> "><%= row.title %></a></li>
-            <li class="date"><%= %></li>
+            <li class="date"><%=row.create_time %></li>
             <input type="hidden" value="<%= row.content %> " name="content" />
             <li class="N_file">
               첨부파일<a href=""><img src="img/iconmonstr-download-19-16.png" alt="" /></a>

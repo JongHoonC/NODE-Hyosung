@@ -40,6 +40,41 @@ router.get('/notice', (req, res, next) => {
   });
 });
 
+// 뉴스 메인
+router.get('/news', (req, res, next) => {
+  db.getnews(rows => {
+    res.render('news', {rows: rows, layout: 'layoutnews'});
+  });
+});
+router.get('/news_write', (req, res, next) => {
+  res.render('news_write', {layout: 'layoutnews'});
+});
+
+//뉴스 사진 올리기 위한 작업
+const upload = multer({
+  storage: multer.diskStorage({
+    destination(req, file, done) {
+      done(null, '../public/upload/');
+    },
+    filename(req, file, done) {
+      const ext = path.extname(file.originalname); //파일의 확장자
+      done(null, path.basename(file.originalname, ext) + Date.now() + ext); //파일명+날짜+확장자명
+    },
+  }),
+  limits: {fileSize: 1024 * 1024 * 2}, //1024는 픽셀을 의미하고 2는 사진의 크키 즉 2메가바이트 라는 것이다.
+});
+
+// 뉴스 작성하고 넘겨주기
+router.post('/news_write', upload.single('img'), (req, res) => {
+  let param = JSON.parse(JSON.stringify(req.body));
+  let title = param['title'];
+  let create_time = param['create_time'];
+  let img = 'upload/' + req.file.filename;
+  db.insertNews(img, title, create_time, () => {
+    res.redirect('/news');
+  });
+});
+
 // 공지 작성 페이지
 router.post('/writeList', (req, res, next) => {
   let param = JSON.parse(JSON.stringify(req.body));
@@ -74,7 +109,6 @@ router.get('/update_notice', (req, res) => {
   let id = req.query.id;
   db.getUpdateNotice(id, row => {
     res.render('notice_update', {row: row[0], layout: 'layoutNotice'});
-    //파일명과 맞아야함
   });
 });
 
@@ -85,8 +119,7 @@ router.post('/update_notice', (req, res) => {
   let title = param['title'];
   let content = param['content'];
   let create_time = param['create_time'];
-  console.log(create_time);
-  db.updateNotice(id, title, content, create_time, () => {
+  db.updateNotice(id, title, content, () => {
     res.redirect('/notice');
   });
 });
