@@ -30,13 +30,27 @@
 
 .detail__content {
   padding-left: 10px;
-  height: 400px;
   position: relative;
 }
 
-.file {
-  position: absolute;
-  bottom: 10px;
+.detail__content--img {
+  width: 250px;
+  height: auto;
+}
+
+.detail__content--img > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.detail__content > .content {
+  margin: 50px 0;
+}
+
+pre {
+  display: block;
+  white-space: pre-wrap;
 }
 
 .reWrite {

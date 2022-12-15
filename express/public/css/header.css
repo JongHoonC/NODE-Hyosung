@@ -275,6 +275,10 @@
   margin-left: 50px;
 }
 
+#mySidenav > ul > li > a {
+  color: #333;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;

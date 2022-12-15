@@ -6,9 +6,9 @@ const {send} = require('process');
 const db = require('./../db.js');
 const fs = require('fs');
 
-router.get('/', (req, res, next) => {
-  res.render('index');
-});
+// router.get('/', (req, res, next) => {
+//   res.render('index');
+// });
 
 router.get('/emp', (req, res, next) => {
   res.render('employment', {layout: 'layoutEmp'});
@@ -46,6 +46,13 @@ router.get('/news', (req, res, next) => {
     res.render('news', {rows: rows, layout: 'layoutnews'});
   });
 });
+// 메인페이지 뉴스
+router.get('/', (req, res, next) => {
+  db.getMainNews(rows => {
+    res.render('index', {rows: rows});
+  });
+});
+
 router.get('/news_write', (req, res, next) => {
   res.render('news_write', {layout: 'layoutnews'});
 });
@@ -68,9 +75,48 @@ const upload = multer({
 router.post('/news_write', upload.single('img'), (req, res) => {
   let param = JSON.parse(JSON.stringify(req.body));
   let title = param['title'];
-  let create_time = param['create_time'];
+  let content = param['content'];
   let img = 'upload/' + req.file.filename;
-  db.insertNews(img, title, create_time, () => {
+  db.insertNews(img, title, content, () => {
+    res.redirect('/news');
+  });
+});
+
+//뉴스 상세 페이지
+router.get('/news_detail', (req, res) => {
+  let id = req.query.id;
+  db.news_detail(id, row => {
+    res.render('news_detail', {row: row[0], layout: 'layoutnews'});
+    //파일명과 맞아야함
+  });
+});
+
+//뉴스 삭제 페이지
+router.get('/delete_news', (req, res) => {
+  //sub1의 onclick과 맞아야함
+  let id = req.query.id;
+  db.deletetNews(id, () => {
+    res.redirect('/news');
+    //파일명과 맞아야함
+  });
+});
+
+//뉴스 수정페이지로 넘어가는 과정
+router.get('/update_news', (req, res) => {
+  let id = req.query.id;
+  db.getUpdateNews(id, row => {
+    res.render('news_update', {row: row[0], layout: 'layoutnews'});
+  });
+});
+
+//뉴스  수정
+router.post('/update_news', upload.single('img'), (req, res) => {
+  let param = JSON.parse(JSON.stringify(req.body));
+  let id = param['id'];
+  let title = param['title'];
+  let content = param['content'];
+  let img = 'upload/' + req.file.filename;
+  db.updateNews(id, title, content, img, () => {
     res.redirect('/news');
   });
 });

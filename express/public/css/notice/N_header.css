@@ -12,7 +12,9 @@
   z-index: 9999;
   transition: 0.5s;
 }
-
+#mySidenav > ul > li > a {
+  color: #333;
+}
 #h_wrap > a {
   display: block;
   padding: 15px 0;

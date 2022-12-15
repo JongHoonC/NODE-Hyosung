@@ -95,10 +95,50 @@ function getnews(callback) {
 }
 
 // 뉴스 작성
-function insertNews(img, title, create_time, callback) {
-  connection.query(`INSERT INTO news_table(img,title,create_time,) VALUES('${img}',${title},'${create_time}')`, err => {
+function insertNews(img, title, content, callback) {
+  connection.query(`INSERT INTO news_table(img,title,content,create_time) VALUES('${img}','${title}','${content}',NOW())`, err => {
     if (err) throw err;
     callback();
+  });
+}
+
+// 뉴스 상세페이지
+function news_detail(id, callback) {
+  connection.query(`SELECT * FROM news_table WHERE id='${id}'`, (err, row) => {
+    if (err) throw err;
+    callback(row);
+  });
+}
+
+//뉴스 삭제 하기
+function deletetNews(id, callback) {
+  connection.query(`DELETE FROM news_table WHERE id='${id}'`, err => {
+    if (err) throw err;
+    callback();
+  });
+}
+
+// 뉴스 수정
+function updateNews(id, title, content, img, callback) {
+  connection.query(`UPDATE news_table SET title='${title}', content='${content}', img='${img}' ,create_time=NOW() WHERE id='${id}'`, err => {
+    if (err) throw err;
+    callback();
+  });
+}
+
+// 뉴스 수정 페이지로 넘어가는 과정
+function getUpdateNews(id, callback) {
+  connection.query(`select * from news_table where id='${id}'`, (err, row) => {
+    if (err) throw err;
+    callback(row);
+  });
+}
+
+// 메인페이지 뉴스
+function getMainNews(callback) {
+  connection.query('SELECT * FROM news_table ORDER BY id DESC', (err, rows) => {
+    if (err) throw err;
+    callback(rows);
   });
 }
 
@@ -114,4 +154,9 @@ module.exports = {
   loginCheck,
   getnews,
   insertNews,
+  news_detail,
+  deletetNews,
+  updateNews,
+  getUpdateNews,
+  getMainNews,
 };

@@ -16,7 +16,7 @@
       </div>
       <div class="section__2--newsList">
         <% rows.forEach((row,index)=> { %>
-        <a href="#" class="news_wrap">
+        <a href="/news_detail?id=<%= row.id %>" class="news_wrap">
           <div class="news__thum">
             <img src="<%= row.img %> " alt="" />
           </div>

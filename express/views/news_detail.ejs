@@ -1,0 +1,47 @@
+<main id="detail">
+  <!-- 섹션1 -->
+  <section>
+    <div class="section1__bg-wrap">
+      <div class="section1__bg-img"></div>
+      <div class="section1__text ko">
+        <h1>뉴스센터</h1>
+        <h4>효성중공업이 전하는 다양한 활동이야기</h4>
+      </div>
+    </div>
+  </section>
+  <section>
+    <form action="/">
+      <div class="section2__wrap ko w1200">
+        <div class="section2__title ko">
+          <input type="hidden" name="id" value="<%= row.id %> " />
+          <h1>NEWS</h1>
+        </div>
+        <div class="detail__title">
+          <h3><%= row.title %></h3>
+        </div>
+        <div class="detail__date">
+          <p>관리자 | <%= row.create_time %> |</p>
+        </div>
+        <div class="detail__content">
+          <div class="detail__content--img">
+            <img src="<%= row.img %> " alt="" />
+          </div>
+          <pre class="content"><%= row.content %></pre>
+        </div>
+        <div class="reWrite">
+          <a href="/update_news?id=<%= row.id %> ">
+            <p>수정</p>
+          </a>
+          <a href="/delete_news?id=<%= row.id %> ">
+            <p>삭제</p>
+          </a>
+        </div>
+        <div class="goList">
+          <a href="/news">
+            <p>목록으로</p>
+          </a>
+        </div>
+      </div>
+    </form>
+  </section>
+</main>
