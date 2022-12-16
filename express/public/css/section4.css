@@ -26,9 +26,8 @@
   font-size: 50px;
 }
 
-.section4__titl > h5 {
+.section4__title > h5 {
   margin: 50px 0 50px 0;
-  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
 }
 /*타이틀*/
@@ -42,16 +41,19 @@
 }
 .NEWS_box > a {
   display: flex;
+  justify-content: center;
   width: 100%;
   height: 340px;
   padding: 10px;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   background-color: #f6f7f8;
   font-family: 'Noto Sans KR', sans-serif;
   box-sizing: border-box;
-  transition: all 1s;
+  transition: all 0.5s;
+}
+.NEWS_box > a:hover {
+  background-color: #d3d3d3;
 }
 
 .NEWS_box > a > h1 {
@@ -85,12 +87,12 @@
 
 .section4__more > a {
   display: flex;
+  justify-content: center;
   width: 155px;
   height: 48px;
   margin: 30px auto;
   border: 1px solid #4db6ac;
   color: #4db6ac;
-  justify-content: center;
   align-items: center;
   border-radius: 40px;
 }

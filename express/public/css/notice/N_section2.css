@@ -19,8 +19,8 @@
 
 .convenience {
   display: flex;
-  margin-top: 60px;
   justify-content: space-between;
+  margin-top: 60px;
 }
 .notice__number {
   display: flex;
@@ -105,9 +105,9 @@ input::placeholder {
 
 .root--write {
   display: flex;
+  justify-content: flex-end;
   width: 100%;
   margin: 20px 0;
-  justify-content: flex-end;
   text-align: right;
 }
 .root--write > a {

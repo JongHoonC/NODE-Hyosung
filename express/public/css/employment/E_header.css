@@ -1,14 +1,14 @@
 /*헤더*/
 #h_wrap {
   display: flex;
-  z-index: 9999;
+  justify-content: space-between;
+  position: fixed;
   width: 100%;
   height: 100px;
-  position: fixed;
+  padding: 0 45px;
+  z-index: 9999;
   left: 0;
   top: 0;
-  justify-content: space-between;
-  padding: 0 45px;
   box-sizing: border-box;
   transition: 0.5s;
 }
@@ -58,10 +58,10 @@
 }
 /* 호버했을 때 로고 색 */
 .active1 > a > .LOGO {
-  z-index: 9000;
   width: 312px;
   height: 30px;
   padding: 35px 0;
+  z-index: 9000;
   box-sizing: border-box;
   background-image: url(../img/overLOGO.png);
   background-repeat: no-repeat;
@@ -77,17 +77,17 @@
 }
 #gnb > ul {
   display: flex;
-  z-index: 9999;
-  width: 800px;
-  box-sizing: border-box;
   justify-content: space-between;
+  width: 800px;
+  z-index: 9999;
+  box-sizing: border-box;
   text-align: center;
 }
 
 #gnb > ul > li > a {
+  color: #d9d9d9;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 600;
-  color: #d9d9d9;
 }
 
 #drop > li {
@@ -99,14 +99,14 @@
 
 /* 드롭다운 */
 .cont {
+  overflow: hidden;
+  position: absolute;
   width: 900px;
   visibility: hidden;
   opacity: 0;
-  position: absolute;
   top: 80px;
   left: 50%;
   transform: translateX(-50%);
-  overflow: hidden;
 }
 .cont > li {
   width: 100%;
@@ -118,20 +118,20 @@
   width: 100%;
   height: auto;
   padding: 5px 10px;
+  color: #d9d9d9;
   box-sizing: border-box;
   transition: all 0.3s;
-  color: #d9d9d9;
   font-weight: 700;
 }
 
 .cont.active {
   display: flex;
+  justify-content: space-between;
+  overflow: hidden;
   width: 1100px;
   visibility: visible;
   opacity: 1;
   align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
   transition: all 0.3s;
 }
 /* 드롭다운 */
@@ -172,10 +172,10 @@
 /*오른쪽 메뉴*/
 .h_right {
   display: flex;
+  justify-content: flex-end;
   width: 312px;
   height: 100px;
   padding: 35px 0;
-  justify-content: flex-end;
   box-sizing: border-box;
 }
 
@@ -196,17 +196,17 @@
 /* hambuger */
 .nav-icon-5 {
   display: inline-block;
+  position: relative;
   width: 30px;
   height: 30px;
   margin-left: 20px;
-  position: relative;
   cursor: pointer;
 }
 .nav-icon-5 span {
+  position: absolute;
   width: 100%;
   height: 2px;
   background-color: #d9d9d9;
-  position: absolute;
   border-radius: 2px;
   transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
 }
@@ -239,10 +239,10 @@
   width: 100%;
 }
 .sidenav {
-  z-index: 1;
+  position: fixed;
   width: 0;
   height: 100%;
-  position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
   background-color: #fff;
@@ -266,9 +266,9 @@
 }
 #mySidenav > ul > li > ul {
   display: flex;
+  justify-content: center;
   margin-top: 30px;
   flex-direction: column;
-  justify-content: center;
 }
 #mySidenav > ul > li > ul > li {
   margin: 7px auto;
@@ -284,9 +284,9 @@ ul {
 
 .underMenu > li > a {
   display: block;
+  color: #818181;
   text-decoration: none;
   font-size: 16px;
-  color: #818181;
   transition: 0.3s;
 }
 
@@ -324,8 +324,8 @@ ul {
 @media (max-width: 1280px) {
   .LOGO {
     width: 250px;
-    background-image: url(../../img/LOGO_m.png);
     padding: 15px 0;
+    background-image: url(../../img/LOGO_m.png);
   }
   .focus a .LOGO {
     background-image: url(../../img/LOGO_m_viewing13.png);
@@ -341,8 +341,8 @@ ul {
   .hamberger > a > .LOGO {
     width: 250px;
     height: 30px;
-    background-image: url(../../img/LOGO_m_viewing13.png);
     padding: 15px 0;
+    background-image: url(../../img/LOGO_m_viewing13.png);
   }
   .sidenav {
     margin-top: 60px;

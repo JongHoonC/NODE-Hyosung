@@ -41,8 +41,8 @@
 
 .reWrite {
   display: flex;
-  margin-top: 20px;
   justify-content: flex-end;
+  margin-top: 20px;
 }
 
 .reWrite > a {
@@ -57,8 +57,8 @@
 
 .goList {
   display: flex;
-  margin-top: 20px;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .goList > a {

@@ -1,8 +1,8 @@
 .section5__wrap {
   display: flex;
+  justify-content: space-between;
   padding: 120px 0;
   box-sizing: border-box;
-  justify-content: space-between;
   align-items: center;
 }
 .section5__wrap .HyosungDo__Description p {

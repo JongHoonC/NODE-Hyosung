@@ -107,10 +107,10 @@
 /* overview */
 .overview {
   display: flex;
+  justify-content: space-between;
   width: 1200px;
   padding: 130px 20px 160px 20px;
   margin: 0 auto;
-  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   transition: all 0.3s;

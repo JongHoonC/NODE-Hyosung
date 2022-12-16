@@ -94,9 +94,9 @@ section {
 /* 페이지네이션 */
 .buttons {
   display: inline-flex;
+  justify-content: center;
   position: relative;
   padding: 1rem 0;
-  justify-content: center;
 }
 
 .button {
