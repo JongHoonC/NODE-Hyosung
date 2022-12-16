@@ -23,8 +23,8 @@
 }
 
 .detail__date {
-  text-align: right;
   margin: 20px 0;
+  text-align: right;
   font-size: 13px;
 }
 
@@ -54,8 +54,8 @@ pre {
 }
 
 .reWrite {
-  margin-top: 20px;
   display: flex;
+  margin-top: 20px;
   justify-content: flex-end;
 }
 
@@ -70,8 +70,8 @@ pre {
 }
 
 .goList {
-  margin-top: 20px;
   display: flex;
+  margin-top: 20px;
   justify-content: center;
 }
 

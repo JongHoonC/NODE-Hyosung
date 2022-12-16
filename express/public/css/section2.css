@@ -1,6 +1,7 @@
 /* 섹션2 */
 .section2 {
   display: flex;
+  width: 100%;
 }
 
 .section2_wrap {
@@ -8,7 +9,8 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  transition: 1s;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /*섹션2 제목 what we offer*/
@@ -18,21 +20,18 @@
 .section2Title > h1 {
   font-size: 50px;
   letter-spacing: 0.5px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
+  font-weight: bold;
   color: #333;
 }
 .section2Title > p {
   font-size: 16px;
   margin-top: 30px;
-  font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;
   color: #888888;
 }
 
 /*섹션2 콘텐츠*/
 .section2Cont {
-  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -41,10 +40,9 @@
 .section2Cont > .article_wrap {
   width: calc(33.33% - 20px);
   height: 400px;
-  overflow: hidden;
 }
 .section2Cont > .article_wrap > article {
-  height: 400px;
+  height: 100%;
   padding: 85px 30px 30px;
   color: #fff;
   background-position: center center;
@@ -56,8 +54,8 @@
 .section2Cont > .article_wrap > article:hover > .section2Cont_title > span {
   width: 150px;
   height: 2px;
-  background-color: #fff;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .s2C_img1 {
@@ -84,26 +82,25 @@
   margin-bottom: 40px;
 }
 
-/* 밧스의 줄 */
+/* hover 할 때 줄 */
 .section2Cont_title > span {
   display: block;
   width: 83px;
   height: 2px;
-  background-color: #fff;
   margin: 0 auto;
+  background-color: #fff;
   transition: 0.5s;
 }
 .section2Cont_title > h6 {
   margin-top: 48px;
   font-size: 16px;
-  font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* 더보기란 */
 .sec2_more {
-  margin: 54px auto 0 auto;
   width: 32px;
   height: 32px;
+  margin: 54px auto 0 auto;
   background-image: url(../img/upper-link.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -115,11 +112,7 @@
 }
 
 @media (max-width: 1280px) {
-  .section2 {
-    width: 100%;
-  }
   .section2_wrap {
-    width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -136,9 +129,7 @@
     margin-bottom: 10px;
   }
   .section2Cont > .article_wrap > article {
-    height: auto;
     padding: 30px 30px 30px;
-    box-sizing: border-box;
   }
 
   .section2Title > p {
@@ -148,10 +139,6 @@
   .section2Cont_title > h6 {
     margin-top: 30px;
     font-size: 16px;
-  }
-  .section2_wrap {
-    padding: 0 20px;
-    box-sizing: border-box;
   }
   .sec2_more {
     display: none;

@@ -11,16 +11,16 @@
 
 .storage {
   display: flex;
-  justify-content: flex-end;
   width: 100%;
+  justify-content: flex-end;
   text-align: right;
 }
 
 .storage > a {
   display: block;
-  border: 1px solid #000;
   width: 100px;
   height: 50px;
+  border: 1px solid #000;
   line-height: 50px;
   text-align: center;
   font-weight: bold;
@@ -33,22 +33,22 @@
   border: 1px solid #000;
 }
 .write--box textarea {
+  width: 100%;
   resize: none;
   margin-top: 20px;
-  width: 100%;
 }
 
 .push {
-  margin-top: 20px;
   display: flex;
+  margin-top: 20px;
   justify-content: flex-end;
 }
 
 .registration input {
-  border: 1px solid #000;
   display: block;
   width: 100%;
   height: auto;
+  border: 1px solid #000;
   padding: 5px 10px;
   box-sizing: border-box;
   background-color: #fff;
@@ -58,10 +58,10 @@
   margin-left: 20px;
 }
 .cancel a {
-  border: 1px solid #000;
   display: block;
   width: 100%;
   height: auto;
+  border: 1px solid #000;
   padding: 5px 10px;
   box-sizing: border-box;
 }

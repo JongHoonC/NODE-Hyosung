@@ -33,7 +33,6 @@ a > .LOGO_m {
 }
 .footer__content {
   font-size: 13px;
-  font-family: 'Noto Sans KR', sans-serif;
 }
 .footer__content h6 {
   margin: 5px 0;
@@ -43,7 +42,6 @@ a > .LOGO_m {
 .footer__copyright > h6 {
   margin-top: 20px;
   font-size: 10px;
-  font-family: 'Roboto', sans-serif;
 }
 
 /*footer rightBox*/
@@ -67,7 +65,6 @@ a > .LOGO_m {
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 15px;
-  font-family: 'Noto Sans KR', sans-serif;
 }
 
 /*sns__list*/

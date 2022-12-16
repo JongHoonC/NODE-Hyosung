@@ -23,14 +23,14 @@
 }
 
 .detail__date {
-  text-align: right;
   margin: 20px 0;
+  text-align: right;
   font-size: 13px;
 }
 
 .detail__content {
-  padding-left: 10px;
   height: 400px;
+  padding-left: 10px;
   position: relative;
 }
 
@@ -40,8 +40,8 @@
 }
 
 .reWrite {
-  margin-top: 20px;
   display: flex;
+  margin-top: 20px;
   justify-content: flex-end;
 }
 
@@ -56,8 +56,8 @@
 }
 
 .goList {
-  margin-top: 20px;
   display: flex;
+  margin-top: 20px;
   justify-content: center;
 }
 

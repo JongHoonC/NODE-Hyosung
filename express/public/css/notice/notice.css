@@ -93,9 +93,9 @@ section {
 }
 /* 페이지네이션 */
 .buttons {
+  display: inline-flex;
   position: relative;
   padding: 1rem 0;
-  display: inline-flex;
   justify-content: center;
 }
 

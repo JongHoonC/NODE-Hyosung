@@ -14,15 +14,19 @@
       <div class="section2__title">
         <h1 class="en">NEWS</h1>
       </div>
+      <div class="notice__search ko">
+        <input onkeyup="filter()" type="text" id="value" placeholder="검색어를 입력해 주세요" />
+        <a href=""><img src="img/notice search.png" alt="" /></a>
+      </div>
       <div class="section__2--newsList">
         <% rows.forEach((row,index)=> { %>
-        <a href="/news_detail?id=<%= row.id %>" class="news_wrap">
+        <a href="/news_detail?id=<%= row.id %>" class="news_wrap list">
           <div class="news__thum">
             <img src="<%= row.img %> " alt="" />
           </div>
           <div class="news__text-wrap">
             <div class="news__subject">
-              <p><%= row.title %></p>
+              <p class="title"><%= row.title %></p>
             </div>
             <div class="news__date">
               <p><%= row.create_time %></p>

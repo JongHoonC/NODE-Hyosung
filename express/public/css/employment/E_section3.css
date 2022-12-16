@@ -9,12 +9,12 @@
 }
 
 .section3__pic {
+  width: 500px;
+  height: 453px;
   background-image: url(../../img/company.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 500px;
-  height: 453px;
   transition: 0.5s;
 }
 

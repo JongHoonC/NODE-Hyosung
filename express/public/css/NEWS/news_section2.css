@@ -83,6 +83,20 @@ a:hover {
   color: #333;
 }
 
+.notice__search {
+  display: flex;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 10px 10px 20px 10px;
+  justify-content: flex-end;
+}
+.notice__search a img {
+  display: block;
+}
+.notice__search > input {
+  border: none;
+}
+
 @media (max-width: 1050px) {
   .news__text-wrap {
     height: 100%;

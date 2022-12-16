@@ -6,29 +6,29 @@
 }
 
 .sign-up-next--content {
+  display: flex;
   background: #f7f8f9;
   border-radius: 50px 0;
   padding: 125px 150px;
   box-sizing: border-box;
   text-align: center;
-  display: flex;
   flex-direction: column;
 }
 
 .sign-up-next--content > .logo {
-  background-image: url(../../img/headerLOGO.png);
   width: 250px;
   height: 24px;
+  margin: 0 auto;
+  background-image: url(../../img/headerLOGO.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  margin: 0 auto;
 }
 .sign-up-next--content > h1 {
+  margin: 40px 0;
   font-size: 30px;
   color: #4db6ac;
   font-weight: 600;
-  margin: 40px 0;
 }
 .sign-up-next--content > p {
   font-size: 16px;
@@ -46,9 +46,9 @@
 }
 
 .controlBtn {
+  display: flex;
   width: 400px;
   margin: 0 auto;
-  display: flex;
   justify-content: space-between;
   margin-top: 40px;
 }

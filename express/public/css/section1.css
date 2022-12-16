@@ -3,6 +3,7 @@
   overflow: hidden;
 }
 .bgimg {
+  z-index: 8000;
   width: 100%;
   height: 100vh;
   background-image: url(../img/main\ img.jpg);
@@ -13,7 +14,6 @@
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  z-index: 8000;
 }
 @keyframes scale {
   0% {
@@ -24,13 +24,11 @@
   }
 }
 
-
-
 /* 섹션1 */
 .section1 {
+  display: flex;
   width: 100%;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
@@ -38,6 +36,7 @@
 
 /* 섹션1 타이틀 */
 .sec1_title {
+  z-index: 9999;
   width: 1200px;
   margin: 0 auto;
   position: absolute;
@@ -48,7 +47,6 @@
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  z-index: 9999;
 }
 
 @keyframes opacity {
@@ -62,46 +60,41 @@
 
 .sec1_title > h1 {
   font-size: 60px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #d9d9d9;
   line-height: 150%;
 }
-.sec1_title > h1 > span {
-  color: #4db6ac;
-}
 
 .sec1_title > p {
   margin-top: 22px;
-  font-family: 'Noto Sans KR', sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #d9d9d9;
 }
 /* 마우스 휠 */
-#scroll-downs{
+#scroll-downs {
   position: fixed;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-#scroll-downs span{
+#scroll-downs span {
   color: #ffffff;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
 }
-.mousey{
+.mousey {
   display: block;
   width: 3px;
-  padding: 4px 10px 5px 10px;
   height: 35px;
+  margin: 10px auto 0;
+  padding: 4px 10px 5px 10px;
   border: 2px solid #fff;
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
-  margin: 10px auto 0;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .scroller {
@@ -110,36 +103,41 @@
   height: 10px;
   border-radius: 25%;
   background-color: #fff;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   animation-name: scroll;
   animation-duration: 2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 }
 
 @keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
 }
 @media (max-width: 1280px) {
-  .section1 {
-    width: 100%;
-  }
   .sec1_title {
     width: 100%;
     padding: 0 20px;
   }
-.sec1_title > h1 {
+  .sec1_title > h1 {
     font-size: 35px;
   }
-.sec1_title > p {
+  .sec1_title > p {
     font-size: 16px;
   }
 }
 
-@media(max-width:768px){
-  #scroll-downs{
+@media (max-width: 768px) {
+  #scroll-downs {
     display: none;
   }
 }

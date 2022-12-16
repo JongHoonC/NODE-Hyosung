@@ -1,7 +1,7 @@
 .section5__wrap {
+  display: flex;
   padding: 120px 0;
   box-sizing: border-box;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -17,12 +17,12 @@
 }
 
 .section5_pic {
+  width: 666px;
+  height: 261px;
   background-image: url(../../img/cont_04_img.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 666px;
-  height: 261px;
   transition: 0.5s;
 }
 

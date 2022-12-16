@@ -1,13 +1,14 @@
 .section4__pic {
+  width: 500px;
+  height: 365px;
   background-image: url(../../img/cont_02_img.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 500px;
-  height: 365px;
 }
 
 .figure2 {
+  z-index: -1;
   width: 361px;
   height: 123px;
   background-image: url(../../img/bg_symbol_2.png);
@@ -17,7 +18,6 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: -1;
 }
 
 .more__box {

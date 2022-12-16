@@ -76,8 +76,8 @@ ul {
   top: -5000px;
 }
 .wrap {
-  max-width: 960px;
   margin: 0 auto;
+  max-width: 960px;
 }
 .wrap.wd668 {
   max-width: 628px;
@@ -98,53 +98,53 @@ ul {
   margin: 0px 0 20px 20px;
 }
 .con_term .term_txt {
+  height: 210px;
+  margin: 0 0 15px;
   border: 1px solid #ececec;
   padding: 30px;
-  height: 210px;
   overflow-y: auto;
-  margin: 0 0 15px;
 }
 .con_term .term_txt ul li,
 .con_term .term_txt p,
 .con_term .term_txt div {
+  margin: 0 0 15px;
   color: #818181;
   font-size: 12px;
   line-height: 17px;
-  margin: 0 0 15px;
 }
 .left_margin {
   margin: 0 0 0 20px;
 }
 .con_term .term_txt div.txt_bold {
-  font-weight: bold;
   margin: 0 0 25px;
+  font-weight: bold;
 }
 .btn_wrap {
-  text-align: center;
   margin: 40px 0 30px;
+  text-align: center;
 }
 .btn_wrap a {
+  display: block;
+  width: 168px;
+  height: 30px;
+  margin: 0 auto;
   color: #fff;
   background-color: #4db6ac;
   font-weight: bold;
   padding: 10px;
-  height: 30px;
   line-height: 30px;
-  width: 168px;
-  display: block;
   text-align: center;
-  margin: 0 auto;
 }
 .btn_wrap a.wide {
   width: 587px;
   margin: 0 0 0 20px;
 }
 .find_txt ul li {
+  margin: 0 0 20px;
   color: #9a9a9a;
   font-size: 13px;
   text-align: center;
   line-height: 17px;
-  margin: 0 0 20px;
 }
 .form_txtInput .checkbox_wrap {
   position: relative;
@@ -152,11 +152,11 @@ ul {
   text-align: right;
 }
 .form_txtInput .checkbox_wrap input[type='checkbox'] {
-  position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
+  position: absolute;
+  padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
@@ -174,12 +174,12 @@ ul {
   -ms-user-select: none;
 }
 .form_txtInput .checkbox_wrap input[type='checkbox'] + label:before {
+  width: 12px;
+  height: 12px;
   content: '';
   position: absolute;
   top: 0px;
   left: 0;
-  width: 12px;
-  height: 12px;
   text-align: center;
   background: #fff;
   border: 1px solid #c2c2c2;
@@ -193,45 +193,45 @@ ul {
   border-color: #ddd;
 }
 .form_txtInput .checkbox_wrap input[type='checkbox']:checked + label:after {
+  width: 7px;
+  height: 7px;
   content: '✓';
   color: #4db6ac;
   position: absolute;
   top: 0px;
   left: 2px;
-  width: 7px;
-  height: 7px;
   font-size: 13px;
   font-weight: bold;
 }
 .exTxt {
-  font-size: 14px;
-  color: #9a9a9a;
   display: block;
   margin: 0 0 45px 20px;
+  font-size: 14px;
+  color: #9a9a9a;
 }
 .join_form {
   width: 100%;
   max-width: 668px;
 }
 .join_form table {
-  border-spacing: 0;
+  width: 100%;
   margin: 0;
+  border-spacing: 0;
   padding: 0;
   border: 0;
-  width: 100%;
 }
 .join_form table input {
+  width: 100%;
+  height: 35px;
   border: 1px solid #ececec;
   font-size: 14px;
   color: #4c4c4c;
-  height: 35px;
   padding: 10px;
-  width: 100%;
   float: left;
 }
 .join_form table input.email {
-  width: 162px;
   display: inline-block;
+  width: 162px;
 }
 .join_form table input.email2 {
   width: 192px;
@@ -256,9 +256,9 @@ ul {
   width: 150px;
 }
 .join_form table th span {
+  display: inline-block;
   color: #404040;
   font-size: 14px;
-  display: inline-block;
   position: relative;
   padding: 0 10px 0 0;
   text-indent: 20px;
@@ -283,10 +283,10 @@ ul {
 }
 .join_form table td a.btn_confirm {
   display: inline-block;
-  float: left;
   width: 115px;
   height: 35px;
   margin: 0px 0 0 10px;
+  float: left;
   border: 1px solid #cfcfcf;
   background: #4db6ac;
   color: #fff;
@@ -295,13 +295,13 @@ ul {
   line-height: 35px;
 }
 .join_form.idpwFind table td select {
+  width: 124px;
+  height: 50px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background: url(https://secsales.interparkb2b.co.kr/data/G94/main/sele_arr.gif) no-repeat 95% 50%;
   text-indent: 20px;
-  width: 124px;
-  height: 50px;
   border: 1px solid #ececec;
   font-size: 14px;
   color: #ccc;
@@ -318,8 +318,8 @@ ul {
 .mar10:after,
 .join_form.idpwFind table td select:after,
 .join_form table td a.btn_confirm:after {
-  content: '';
   display: block;
+  content: '';
   clear: both;
 }
 .agree_wrap {
@@ -342,8 +342,8 @@ ul {
   margin: 27px 0 0;
 }
 .mar10 {
-  margin: 3px 9px 0 10px;
   display: inline-block;
+  margin: 3px 9px 0 10px;
   padding: 0;
   float: left;
 }
@@ -369,8 +369,8 @@ ul {
   font-weight: bold;
 }
 .join_form table input.email {
-  width: 200px;
   display: inline-block;
+  width: 200px;
 }
 .explan_txt {
   margin: 3px 0 0 22px;
@@ -381,18 +381,18 @@ ul {
   line-height: 17px;
 }
 .popWrap {
+  display: none;
+  z-index: 5;
+  width: 100%;
+  margin: 30px auto 0;
   border: 1px solid #ececec;
   padding: 30px;
   max-width: 400px;
-  width: 100%;
-  margin: 30px auto 0;
-  display: none;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
-  z-index: 5;
 }
 .popWrap.is-open {
   display: block;
@@ -409,14 +409,14 @@ ul {
   margin: 30px 0 0;
 }
 .popWrap .pop_btnWrap a {
+  display: block;
+  width: 103px;
+  height: 22px;
   color: #fff;
   background-color: #4380ce;
   font-weight: bold;
   padding: 10px;
-  height: 22px;
   line-height: 22px;
-  width: 103px;
-  display: block;
   text-align: center;
 }
 .join_form table input.send_number::placeholder {
@@ -429,16 +429,16 @@ ul {
   text-align: right;
 }
 .overlayer {
-  position: fixed;
   display: none;
+  z-index: 2;
   width: 100%;
   height: 100%;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
   cursor: pointer;
 }
 .overlayer.is-open {
@@ -466,16 +466,16 @@ ul {
     width: 100%;
   }
   .join_form table input {
+    width: 100%;
+    height: 37px;
     border: 1px solid #ececec;
     font-size: 14px;
     color: #4c4c4c;
-    height: 37px;
     padding: 10px;
-    width: 100%;
   }
   .join_form table input.email {
-    width: 30%;
     display: inline-block;
+    width: 30%;
   }
   .join_form table input.email2 {
     width: 60%;
@@ -529,14 +529,14 @@ ul {
   .join_form.idpwFind table tr.email input:after,
   .mar10:after,
   .join_form.idpwFind table td select:after {
-    content: '';
     display: block;
+    content: '';
     clear: both;
   }
   .popWrap {
+    margin: 30px auto 0;
     right: auto;
     max-width: 80vw;
-    margin: 30px auto 0;
     left: 50%;
     transform: translateX(-50%);
   }

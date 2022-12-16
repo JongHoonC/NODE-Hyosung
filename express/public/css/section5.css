@@ -18,11 +18,12 @@
   font-size: 50px;
   font-weight: 900;
 }
+
 .section5__title h5 {
+  margin: 40px 0 200px 0;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   color: #7e7e7e;
-  margin: 40px 0 200px 0;
 }
 /*타이틀*/
 
@@ -37,9 +38,9 @@
 
 /*콘텐츠 아이콘*/
 .C_IMG {
-  margin: 0 auto;
   width: 80px;
   height: 80px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -82,9 +83,9 @@
     margin: 25px 0;
   }
   .C_IMG {
-    margin: 0 auto;
     width: 50px;
     height: 50px;
+    margin: 0 auto;
   }
   .content--text {
     font-size: 16px;
