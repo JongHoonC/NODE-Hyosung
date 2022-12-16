@@ -131,8 +131,8 @@ a > .LOGO_m {
     margin-right: 250px;
   }
   .rightBox__content {
-    flex-wrap: wrap;
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
   .footer__content {
     font-size: 13px;
