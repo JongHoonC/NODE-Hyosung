@@ -1,8 +1,8 @@
 .history__wrap {
   display: flex;
+  position: relative;
   flex: 1;
   padding-top: 150px;
-  position: relative;
   padding-bottom: 285px;
   box-sizing: border-box;
 }
@@ -17,8 +17,8 @@
   left: 110px;
 }
 .history__nav > p {
-  font-size: 14px;
   color: #b8b7b7;
+  font-size: 14px;
   cursor: pointer;
   letter-spacing: 0.05em;
   margin-bottom: 10px;
@@ -29,9 +29,9 @@
 }
 
 .history__event > p {
+  color: #222;
   font-size: 100px;
   font-weight: bold;
-  color: #222;
   margin-bottom: 70px;
   font-family: 'Poppins', sans-serif;
 }

@@ -2,10 +2,10 @@
 footer {
   display: flex;
   width: 100%;
-  box-sizing: border-box;
   padding: 20px 40px;
-  background-color: #fff;
   color: #777777;
+  box-sizing: border-box;
+  background-color: #fff;
 }
 
 .footer__wraper {
@@ -92,8 +92,8 @@ a > .LOGO_m {
   display: none;
 }
 .dropdown-toggle {
-  background-color: transparent;
   color: #777777;
+  background-color: transparent;
 }
 
 .dropdown-menu.show {

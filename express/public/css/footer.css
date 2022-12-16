@@ -1,11 +1,11 @@
 /* 푸터 */
 footer {
-  width: 100%;
   display: flex;
-  box-sizing: border-box;
+  width: 100%;
   padding: 20px 40px;
-  background-color: #1b1b1b;
   color: #777777;
+  box-sizing: border-box;
+  background-color: #1b1b1b;
 }
 
 .footer__wraper {
@@ -17,10 +17,10 @@ a > .LOGO_m {
   display: block;
 }
 .LOGO_m {
-  padding: 35px 0;
-  box-sizing: border-box;
   width: 250px;
   height: 24px;
+  padding: 35px 0;
+  box-sizing: border-box;
   background-image: url(../img/footer_LOGO.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -46,9 +46,9 @@ a > .LOGO_m {
 
 /*footer rightBox*/
 .footer__rightBox {
+  display: flex;
   width: 50%;
   height: 100%;
-  display: flex;
   flex-direction: column;
   padding-top: 20px;
   box-sizing: border-box;
@@ -89,8 +89,8 @@ a > .LOGO_m {
   display: none;
 }
 .dropdown-toggle {
-  background-color: transparent;
   color: #777777;
+  background-color: transparent;
 }
 
 .dropdown-menu.show {

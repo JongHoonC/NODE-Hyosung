@@ -1,15 +1,15 @@
 #sign-up-next > section {
   width: 1200px;
-  margin: 0 auto;
   padding: 0 20px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
 .sign-up-next--content {
   display: flex;
+  padding: 125px 150px;
   background: #f7f8f9;
   border-radius: 50px 0;
-  padding: 125px 150px;
   box-sizing: border-box;
   text-align: center;
   flex-direction: column;
@@ -26,18 +26,18 @@
 }
 .sign-up-next--content > h1 {
   margin: 40px 0;
-  font-size: 30px;
   color: #4db6ac;
+  font-size: 30px;
   font-weight: 600;
 }
 .sign-up-next--content > p {
-  font-size: 16px;
   color: #888;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 .sign-up-next--content > h6 {
-  font-size: 16px;
   color: #4db6ac;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -57,14 +57,14 @@
   display: block;
   width: 150px;
   height: 50px;
-  line-height: 50px;
   border: 1px solid rgb(180, 180, 180);
   color: #333;
+  line-height: 50px;
   transition: all 0.5s;
 }
 .controlBtn > article > p > a:hover {
-  background-color: #4db6ac;
   color: #fff;
+  background-color: #4db6ac;
 }
 
 @media (max-width: 1200px) {

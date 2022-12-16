@@ -1,9 +1,9 @@
 .section__wrap3 {
   display: flex;
   height: auto;
+  padding: 120px 0;
   justify-content: space-between;
   align-items: center;
-  padding: 120px 0;
   box-sizing: border-box;
   transition: 0.5s;
 }
@@ -20,8 +20,8 @@
 
 @media (max-width: 1280px) {
   .section__wrap3 {
-    flex-direction: column;
     padding: 40px 20px;
+    flex-direction: column;
     box-sizing: border-box;
   }
 }

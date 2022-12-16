@@ -11,8 +11,8 @@
 }
 
 .section5__wrap .HyosungDo__Description p:nth-child(2) {
-  margin-top: 20px;
   color: #777;
+  margin-top: 20px;
   font-size: 15px;
 }
 
@@ -28,8 +28,8 @@
 
 @media (max-width: 1280px) {
   .section5__wrap {
-    flex-direction: column;
     padding: 40px 20px;
+    flex-direction: column;
     box-sizing: border-box;
   }
   .section5__wrap .HyosungDo__Description p {
@@ -37,18 +37,18 @@
     font-size: 15px;
   }
   .section5__wrap .HyosungDo__Description p:nth-child(2) {
-    margin-top: 20px;
     color: #777;
+    margin-top: 20px;
     font-size: 14px;
   }
 }
 
 @media (max-width: 768px) {
   .section5_pic {
+    position: relative;
     width: 401px;
     height: 157px;
     transition: 0.5s;
-    position: relative;
     left: 5px;
   }
 }

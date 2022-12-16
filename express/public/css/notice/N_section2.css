@@ -3,9 +3,9 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 .section2__wrap {
+  position: relative;
   padding: 80px 20px;
   box-sizing: border-box;
-  position: relative;
 }
 
 .section2__title {
@@ -136,8 +136,8 @@ a:hover {
     font-size: 13px;
   }
   .notice__list .list li {
-    font-size: 12px;
     overflow: hidden;
+    font-size: 12px;
     text-overflow: ellipsis;
     white-space: nowrap;
   }

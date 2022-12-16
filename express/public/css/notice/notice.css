@@ -35,8 +35,8 @@ ul a {
   box-sizing: content-box;
 }
 * {
-  margin: 0 auto;
   padding: 0;
+  margin: 0 auto;
 }
 a {
   text-decoration: none;
@@ -67,9 +67,9 @@ a {
   background-color: #eeeeee;
 }
 section {
+  position: relative;
   width: 100%;
   height: auto;
-  position: relative;
 }
 
 @media (max-width: 1280px) {
@@ -101,10 +101,10 @@ section {
 
 .button {
   padding: 0 1rem;
-  font-size: 1.2rem;
-  color: #333;
-  background: transparent;
   border: 0;
+  background: transparent;
+  color: #333;
+  font-size: 1.2rem;
   outline: 0;
   cursor: pointer;
 }

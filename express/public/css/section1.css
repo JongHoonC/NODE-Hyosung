@@ -3,9 +3,9 @@
   overflow: hidden;
 }
 .bgimg {
-  z-index: 8000;
   width: 100%;
   height: 100vh;
+  z-index: 8000;
   background-image: url(../img/main\ img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,19 +27,19 @@
 /* 섹션1 */
 .section1 {
   display: flex;
+  position: relative;
   width: 100%;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
-  position: relative;
 }
 
 /* 섹션1 타이틀 */
 .sec1_title {
-  z-index: 9999;
+  position: absolute;
   width: 1200px;
   margin: 0 auto;
-  position: absolute;
+  z-index: 9999;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -59,17 +59,17 @@
 }
 
 .sec1_title > h1 {
+  color: #d9d9d9;
   font-size: 60px;
   font-weight: 700;
-  color: #d9d9d9;
   line-height: 150%;
 }
 
 .sec1_title > p {
+  color: #d9d9d9;
   margin-top: 22px;
   font-size: 18px;
   font-weight: bold;
-  color: #d9d9d9;
 }
 /* 마우스 휠 */
 #scroll-downs {
@@ -88,8 +88,8 @@
   display: block;
   width: 3px;
   height: 35px;
-  margin: 10px auto 0;
   padding: 4px 10px 5px 10px;
+  margin: 10px auto 0;
   border: 2px solid #fff;
   border-radius: 25px;
   opacity: 0.75;

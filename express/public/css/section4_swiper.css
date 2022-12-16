@@ -16,8 +16,8 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  font-size: 18px;
   background: #fff;
+  font-size: 18px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
