@@ -1,6 +1,4 @@
-let app = require("../app");
-const port = process.env.PORT || 3000;
+let app = require('../app');
+var port = 3001;
 
-app.listen(port, () => {
-  console.log(`${port} 로 express 실행`);
-});
+app.listen(process.env.PORT || 3000);
