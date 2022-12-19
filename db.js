@@ -2,12 +2,12 @@
 
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-  host: 'us-cdbr-east-06.cleardb.net',
-  user: 'b2c5052e30420d',
-  password: '5d25f9e7',
-  database: 'heroku_d3a3820586dcf83', //테이블 이름을 적어준다.
-  multipleStatements: true,
+  host: 'localhost',
+  user: 'root',
+  password: '1234',
+  database: 'hyosung', //테이블 이름을 적어준다.
   dateStrings: 'date',
+  multipleStatements: true,
 });
 
 connection.connect(function (err) {
