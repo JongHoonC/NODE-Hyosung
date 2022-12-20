@@ -141,3 +141,11 @@
     display: none;
   }
 }
+@media (max-width: 485px) {
+  .sec1_title > h1 {
+    font-size: 26px;
+  }
+  .sec1_title > p {
+    font-size: 12px;
+  }
+}
