@@ -372,3 +372,36 @@
     transition-duration: 500ms;
   }
 }
+
+@media (max-width: 414px) {
+  .LOGO {
+    width: 180px;
+    height: 17px;
+    background-image: url(../img/180logo.png);
+  }
+  .hamberger > a > .LOGO {
+    width: 180px;
+    height: 17px;
+    background-image: url(../img/180logo.png);
+  }
+  .active1 > a > .LOGO {
+    width: 180px;
+    height: 17px;
+    background-image: url(../img/180logo.png);
+  }
+  .fp-viewing-2 > #h_wrap > a > .LOGO {
+    width: 180px;
+    height: 17px;
+    background-image: url(../img/180logo.png);
+  }
+  .fp-viewing-4 > #h_wrap > a > .LOGO {
+    width: 180px;
+    height: 17px;
+    background-image: url(../img/180logo.png);
+  }
+  .fp-viewing-6 > #h_wrap > a > .LOGO {
+    width: 180px;
+    height: 17px;
+    background-image: url(../img/180logo.png);
+  }
+}

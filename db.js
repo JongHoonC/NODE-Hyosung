@@ -2,9 +2,9 @@
 
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '1234',
+  host: 'database-1.c1s9tr2yqxmc.ap-northeast-1.rds.amazonaws.com',
+  user: 'admin',
+  password: 'Whdgns3853!',
   database: 'hyosung', //테이블 이름을 적어준다.
   dateStrings: 'date',
   multipleStatements: true,
@@ -142,6 +142,15 @@ function getMainNews(callback) {
     callback(rows);
   });
 }
+// 두개 이상의 테이블을 한 번에 조회할 때
+// function getMainNews(callback) {
+//   connection.query('SELECT * FROM news_table ORDER BY id DESC;'+@@@@, (err, rows) => {
+//     let rows1 = rows[0]
+//     let rows2 = rows[1]
+//     if (err) throw err;
+//     callback(row1,rows2);
+//   });
+// }
 
 module.exports = {
   getNotice,

@@ -143,13 +143,19 @@
   .sec2_more {
     display: none;
   }
-  .section2_wrap {
-    padding-top: 50px;
-  }
   .section2Cont_title > span {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%);
+  }
+}
+
+@media (max-width: 485px) {
+  .section2Title > h1 {
+    font-size: 30px;
+  }
+  .section2Title > p {
+    font-size: 11px;
   }
 }
