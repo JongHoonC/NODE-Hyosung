@@ -72,7 +72,7 @@ article {
 }
 
 .timeline {
-  padding: 0 20px;
+  padding: 0 20px 0 100px;
   box-sizing: border-box;
 }
 
@@ -348,14 +348,17 @@ article {
 
 @media (max-width: 1200px) {
   .timeline__nav {
-    display: none;
+    left: 20px;
+  }
+  .timeline__nav.active {
+    left: 20px;
   }
   .wrapper > p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .milestone {
-    font-size: 30px;
+    font-size: 26px;
   }
   .timeline > h1 {
     font-size: 50px;

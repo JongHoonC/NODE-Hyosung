@@ -2,9 +2,9 @@
 
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '1234',
+  host: 'database-1.c1s9tr2yqxmc.ap-northeast-1.rds.amazonaws.com',
+  user: 'admin',
+  password: 'Whdgns3853!',
   database: 'hyosung', //테이블 이름을 적어준다.
   dateStrings: 'date',
   multipleStatements: true,
