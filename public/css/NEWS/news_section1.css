@@ -5,26 +5,26 @@
   width: 100%;
   height: 400px;
   background-image: url(../../img/sub_visual_media2.jpg);
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 
 .section1__text {
   position: absolute;
-  width: 100%;
-  color: #d9d9d9;
   top: 40%;
   left: 50%;
-  transform: translate(-50%);
-  text-align: center;
+  width: 100%;
   font-size: 50px;
   font-weight: bold;
+  color: #d9d9d9;
+  text-align: center;
+  transform: translate(-50%);
 }
 
 .section1__text h4 {
-  font-size: 25px;
   margin-top: 30px;
+  font-size: 25px;
 }
 
 @media (max-width: 1200px) {

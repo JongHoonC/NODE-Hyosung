@@ -38,42 +38,42 @@
   box-sizing: border-box;
 }
 .about_us__compony-intro--title > p {
+  margin-bottom: 50px;
   font-size: 15px;
   font-weight: bold;
-  margin-bottom: 50px;
 }
 
 .about_us__compony-intro--title > h1 {
   font-size: 100px;
-  letter-spacing: 0;
   font-weight: 800;
+  letter-spacing: 0;
   transition: all 0.3s;
 }
 .about_us__compony-intro--title > h2 {
   margin: 54px 0;
-  line-height: 1.5em;
   font-size: 18px;
   font-weight: 500;
+  line-height: 1.5em;
 }
 
 /* about_us__compony-intro--video */
 
 .about_us__compony-intro--video {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   width: 1440px;
   height: 0;
   margin: 0 auto;
   padding-top: 40%;
-  cursor: pointer;
   text-align: center;
+  cursor: pointer;
 }
 .about_us__compony-intro--video > video {
   display: block;
   position: absolute;
-  width: 100%;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
 }
 
@@ -107,11 +107,11 @@
 /* overview */
 .overview {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 1200px;
-  padding: 130px 20px 160px 20px;
   margin: 0 auto;
-  align-items: center;
+  padding: 130px 20px 160px 20px;
   box-sizing: border-box;
   transition: all 0.3s;
 }
@@ -125,17 +125,17 @@
   transition: all 0.3s;
 }
 .overview > .txt02 > p {
-  color: #666;
-  font-weight: 400;
-  font-size: 18px;
   margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
   line-height: 1.5em;
   transition: all 0.3s;
 }
 .overview > .txt02 > p:nth-child(3) {
-  color: #222;
   font-size: 16px;
   font-weight: 500;
+  color: #222;
   letter-spacing: 0.05em;
 }
 
@@ -149,9 +149,9 @@
   .overview {
     display: flex;
     flex-direction: column;
-    transition: all 0.3s;
-    text-align: left;
     align-items: start;
+    text-align: left;
+    transition: all 0.3s;
   }
   .overview > article {
     transition: all 0.3s;
@@ -175,35 +175,35 @@
 
 .overview__section2 {
   padding: 160px 20px;
-  box-sizing: border-box;
   background-image: url(../../img/hisbg3.jpg);
-  background-position: center bottom;
   background-repeat: no-repeat;
+  background-position: center bottom;
   background-size: cover;
+  box-sizing: border-box;
 }
 
 .overview__section2--inner > p {
-  color: #fff;
   margin-bottom: 250px;
-  line-height: 1.5em;
-  font-weight: 600;
   font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.5em;
 }
 .overview__section2--inner > ul {
   display: flex;
   justify-content: space-between;
 }
 .overview__section2--inner > ul > li > p:nth-child(1) {
-  color: #fff;
+  margin-bottom: 30px;
   font-size: 28px;
   font-weight: 600;
+  color: #fff;
   line-height: 1em;
-  margin-bottom: 30px;
 }
 .overview__section2--inner > ul > li > p:nth-child(2) {
-  color: rgba(255, 255, 255, 0.65);
   font-size: 17px;
   font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.5em;
 }
 
@@ -227,12 +227,12 @@
     padding: 100px 20px;
   }
   .overview__section2--inner > p {
-    font-size: 6vw;
     margin-bottom: 80px;
+    font-size: 6vw;
   }
   .overview__section2--inner > ul > li > p:nth-child(1) {
-    font-size: 20px;
     margin-bottom: 15px;
+    font-size: 20px;
   }
   .overview__section2--inner > ul > li > p:nth-child(2) {
     width: 100%;

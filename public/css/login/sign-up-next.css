@@ -1,18 +1,18 @@
 #sign-up-next > section {
   width: 1200px;
-  padding: 0 20px;
   margin: 0 auto;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
 .sign-up-next--content {
   display: flex;
-  padding: 125px 150px;
-  background: #f7f8f9;
-  border-radius: 50px 0;
-  box-sizing: border-box;
-  text-align: center;
   flex-direction: column;
+  padding: 125px 150px;
+  border-radius: 50px 0;
+  background: #f7f8f9;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .sign-up-next--content > .logo {
@@ -26,20 +26,20 @@
 }
 .sign-up-next--content > h1 {
   margin: 40px 0;
-  color: #4db6ac;
   font-size: 30px;
   font-weight: 600;
+  color: #4db6ac;
 }
 .sign-up-next--content > p {
-  color: #888;
-  font-size: 16px;
   margin-bottom: 10px;
+  font-size: 16px;
+  color: #888;
 }
 .sign-up-next--content > h6 {
-  color: #4db6ac;
+  margin-bottom: 15px;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 15px;
+  color: #4db6ac;
 }
 .sign-up-next--content > .id {
   margin: 20px 0;
@@ -63,8 +63,8 @@
   transition: all 0.5s;
 }
 .controlBtn > article > p > a:hover {
-  color: #fff;
   background-color: #4db6ac;
+  color: #fff;
 }
 
 @media (max-width: 1200px) {

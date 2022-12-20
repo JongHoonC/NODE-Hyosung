@@ -6,9 +6,9 @@
 
 .section2_wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 0 20px;
-  flex-direction: column;
   text-align: center;
   box-sizing: border-box;
 }
@@ -18,16 +18,16 @@
   margin-bottom: 20px;
 }
 .section2Title > h1 {
-  color: #333;
   font-size: 50px;
-  letter-spacing: 0.5px;
   font-weight: bold;
+  color: #333;
+  letter-spacing: 0.5px;
 }
 .section2Title > p {
-  color: #888888;
-  font-size: 16px;
   margin-top: 30px;
+  font-size: 16px;
   font-weight: 400;
+  color: #888888;
 }
 
 /*섹션2 콘텐츠*/
@@ -44,10 +44,10 @@
 .section2Cont > .article_wrap > article {
   height: 100%;
   padding: 85px 30px 30px;
-  color: #fff;
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
+  color: #fff;
   box-sizing: border-box;
   transition: 1s;
 }
@@ -76,10 +76,10 @@
   height: 100%;
 }
 .section2Cont_title > h1 {
+  margin-bottom: 40px;
   font-family: 'Roboto', sans-serif;
   font-size: 36px;
   line-height: 150%;
-  margin-bottom: 40px;
 }
 
 /* hover 할 때 줄 */
@@ -99,15 +99,15 @@
 /* 더보기란 */
 .sec2_more {
   position: absolute;
+  bottom: 20px;
+  left: 50%;
   width: 32px;
   height: 32px;
   margin: 54px auto 0 auto;
   background-image: url(../img/upper-link.png);
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  bottom: 20px;
-  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -133,8 +133,8 @@
   }
 
   .section2Title > p {
-    font-size: 13px;
     margin-top: 10px;
+    font-size: 13px;
   }
   .section2Cont_title > h6 {
     margin-top: 30px;

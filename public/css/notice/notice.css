@@ -35,8 +35,8 @@ ul a {
   box-sizing: content-box;
 }
 * {
-  padding: 0;
   margin: 0 auto;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -103,16 +103,16 @@ section {
   padding: 0 1rem;
   border: 0;
   background: transparent;
-  color: #333;
-  font-size: 1.2rem;
   outline: 0;
+  font-size: 1.2rem;
+  color: #333;
   cursor: pointer;
 }
 
 .button.active,
 .button:hover {
-  color: #1f975d;
   font-weight: 600;
+  color: #1f975d;
   text-decoration: underline;
 }
 

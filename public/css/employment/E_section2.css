@@ -1,10 +1,10 @@
 .section__wrap2 {
   display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
   justify-content: space-between;
   height: auto;
   padding: 120px 0;
-  flex-direction: row-reverse;
-  align-items: center;
   box-sizing: border-box;
   transition: 0.5s;
 }
@@ -30,28 +30,28 @@
 }
 
 .HyosungDo__Description {
-  color: #666;
   font-size: 16px;
   font-weight: 300;
+  color: #666;
 }
 
 .figure1 {
   position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
   width: 361px;
   height: 123px;
-  z-index: -1;
   background-image: url(../../img/bg_symbol_1.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  bottom: 0;
-  left: 0;
 }
 
 @media (max-width: 1280px) {
   .section__wrap2 {
-    padding: 40px 20px;
     flex-direction: column;
+    padding: 40px 20px;
     box-sizing: border-box;
     transition: 0.5s;
   }

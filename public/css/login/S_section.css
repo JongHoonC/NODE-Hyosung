@@ -1,7 +1,7 @@
 @charset "utf-8";
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   outline: none;
 }
 html {
@@ -33,15 +33,15 @@ h3,
 h4,
 h5,
 h6 {
-  color: #666;
   font-size: 11pt;
+  color: #666;
   text-decoration: none;
 }
 .btn_wrap > button {
   padding: 10px 50px;
   border: none;
-  color: #fff;
   background-color: #4db6ac;
+  color: #fff;
 }
 img {
   border: 0;
@@ -70,14 +70,14 @@ ul {
 }
 .blind {
   display: block;
-  overflow: hidden;
   position: absolute;
-  left: 0;
   top: -5000px;
+  left: 0;
+  overflow: hidden;
 }
 .wrap {
-  margin: 0 auto;
   max-width: 960px;
+  margin: 0 auto;
 }
 .wrap.wd668 {
   max-width: 628px;
@@ -91,25 +91,25 @@ ul {
 }
 .sub_tit_txt {
   margin: 200px 0 20px 20px;
-  color: #2f2f2f;
   font-size: 25px;
+  color: #2f2f2f;
 }
 .wrap.wd668.line .sub_tit_txt {
   margin: 0px 0 20px 20px;
 }
 .con_term .term_txt {
-  height: 210px;
-  padding: 30px;
-  margin: 0 0 15px;
-  border: 1px solid #ececec;
   overflow-y: auto;
+  height: 210px;
+  margin: 0 0 15px;
+  padding: 30px;
+  border: 1px solid #ececec;
 }
 .con_term .term_txt ul li,
 .con_term .term_txt p,
 .con_term .term_txt div {
   margin: 0 0 15px;
-  color: #818181;
   font-size: 12px;
+  color: #818181;
   line-height: 17px;
 }
 .left_margin {
@@ -127,11 +127,11 @@ ul {
   display: block;
   width: 168px;
   height: 30px;
-  padding: 10px;
   margin: 0 auto;
-  color: #fff;
+  padding: 10px;
   background-color: #4db6ac;
   font-weight: bold;
+  color: #fff;
   line-height: 30px;
   text-align: center;
 }
@@ -141,10 +141,10 @@ ul {
 }
 .find_txt ul li {
   margin: 0 0 20px;
-  color: #9a9a9a;
   font-size: 13px;
-  text-align: center;
+  color: #9a9a9a;
   line-height: 17px;
+  text-align: center;
 }
 .form_txtInput .checkbox_wrap {
   position: relative;
@@ -152,22 +152,22 @@ ul {
   text-align: right;
 }
 .form_txtInput .checkbox_wrap input[type='checkbox'] {
-  overflow: hidden;
   position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
+  padding: 0;
   border: 0;
-  clip: rect(0, 0, 0, 0);
 }
 .form_txtInput .checkbox_wrap input[type='checkbox'] + label {
   display: inline-block;
   position: relative;
-  color: #818181;
-  line-height: 14px;
   padding-left: 20px;
   font-size: 13px;
+  color: #818181;
+  line-height: 14px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -175,39 +175,39 @@ ul {
 }
 .form_txtInput .checkbox_wrap input[type='checkbox'] + label:before {
   position: absolute;
+  top: 0px;
+  left: 0;
   width: 12px;
   height: 12px;
   border: 1px solid #c2c2c2;
   background: #fff;
-  content: '';
-  top: 0px;
-  left: 0;
   text-align: center;
+  content: '';
 }
 .form_txtInput .checkbox_wrap input[type='checkbox'] + label:active:before,
 .checkbox_wrap input[type='checkbox']:checked + label:active:before {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
 .form_txtInput .checkbox_wrap input[type='checkbox']:checked + label:before {
-  background: #fff;
   border-color: #ddd;
+  background: #fff;
 }
 .form_txtInput .checkbox_wrap input[type='checkbox']:checked + label:after {
   position: absolute;
-  width: 7px;
-  height: 7px;
-  color: #4db6ac;
-  content: '✓';
   top: 0px;
   left: 2px;
+  width: 7px;
+  height: 7px;
   font-size: 13px;
   font-weight: bold;
+  color: #4db6ac;
+  content: '✓';
 }
 .exTxt {
   display: block;
   margin: 0 0 45px 20px;
-  color: #9a9a9a;
   font-size: 14px;
+  color: #9a9a9a;
 }
 .join_form {
   width: 100%;
@@ -215,10 +215,10 @@ ul {
 }
 .join_form table {
   width: 100%;
-  padding: 0;
   margin: 0;
-  border: 0;
+  padding: 0;
   border-spacing: 0;
+  border: 0;
 }
 .join_form table input {
   float: left;
@@ -226,8 +226,8 @@ ul {
   height: 35px;
   padding: 10px;
   border: 1px solid #ececec;
-  color: #4c4c4c;
   font-size: 14px;
+  color: #4c4c4c;
 }
 .join_form table input.email {
   display: inline-block;
@@ -259,8 +259,8 @@ ul {
   display: inline-block;
   position: relative;
   padding: 0 10px 0 0;
-  color: #404040;
   font-size: 14px;
+  color: #404040;
   text-indent: 20px;
 }
 .join_form table th {
@@ -272,11 +272,11 @@ ul {
 }
 .join_form table th span:after {
   position: absolute;
-  color: #f95427;
-  content: '*';
-  font-size: 13px;
   top: 0;
   right: 0px;
+  font-size: 13px;
+  color: #f95427;
+  content: '*';
 }
 .join_form.idpwFind table th span:after {
   content: none;
@@ -290,9 +290,9 @@ ul {
   border: 1px solid #cfcfcf;
   background: #4db6ac;
   color: #fff;
+  line-height: 35px;
   text-align: center;
   vertical-align: top;
-  line-height: 35px;
 }
 .join_form.idpwFind table td select {
   float: left;
@@ -300,12 +300,12 @@ ul {
   height: 50px;
   border: 1px solid #ececec;
   background: url(https://secsales.interparkb2b.co.kr/data/G94/main/sele_arr.gif) no-repeat 95% 50%;
+  font-size: 14px;
   color: #ccc;
+  text-indent: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  text-indent: 20px;
-  font-size: 14px;
 }
 .join_form.idpwFind table td select::-ms-expand {
   display: none;
@@ -319,8 +319,8 @@ ul {
 .join_form.idpwFind table td select:after,
 .join_form table td a.btn_confirm:after {
   display: block;
-  content: '';
   clear: both;
+  content: '';
 }
 .agree_wrap {
   margin: 36px 0 0;
@@ -329,8 +329,8 @@ ul {
   text-align: left;
 }
 ::placeholder {
-  color: #c4c4c4;
   opacity: 1;
+  color: #c4c4c4;
 }
 :-ms-input-placeholder {
   color: #c4c4c4 !important;
@@ -344,15 +344,15 @@ ul {
 .mar10 {
   display: inline-block;
   float: left;
-  padding: 0;
   margin: 3px 9px 0 10px;
+  padding: 0;
 }
 .exform_txt {
   padding: 12px 0 19px 0;
+  border-bottom: 1px solid #ececec;
+  font-size: 13px;
   color: #9a9a9a;
   text-align: right;
-  font-size: 13px;
-  border-bottom: 1px solid #ececec;
 }
 .exform_txt span {
   display: inline-block;
@@ -361,12 +361,12 @@ ul {
 }
 .exform_txt span:after {
   position: absolute;
-  color: #f95427;
-  content: '*';
-  left: 0;
   top: 0;
+  left: 0;
   font-size: 13px;
   font-weight: bold;
+  color: #f95427;
+  content: '*';
 }
 .join_form table input.email {
   display: inline-block;
@@ -376,30 +376,30 @@ ul {
   margin: 3px 0 0 22px;
 }
 .explan_txt li {
-  color: #b2b2b2;
   font-size: 13px;
+  color: #b2b2b2;
   line-height: 17px;
 }
 .popWrap {
   display: none;
   position: absolute;
-  width: 100%;
-  padding: 30px;
-  margin: 30px auto 0;
-  border: 1px solid #ececec;
-  background: #fff;
-  z-index: 5;
-  max-width: 400px;
   top: 0;
   left: 50%;
+  z-index: 5;
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto 0;
+  padding: 30px;
+  border: 1px solid #ececec;
+  background: #fff;
   transform: translateX(-50%);
 }
 .popWrap.is-open {
   display: block;
 }
 .popWrap .pop_txt_con .pop_exTxt {
-  color: #9a9a9a;
   font-size: 14px;
+  color: #9a9a9a;
   line-height: 20px;
 }
 .popWrap .pop_txt_con .pop_exTxt span {
@@ -413,9 +413,9 @@ ul {
   width: 103px;
   height: 22px;
   padding: 10px;
-  color: #fff;
   background-color: #4380ce;
   font-weight: bold;
+  color: #fff;
   line-height: 22px;
   text-align: center;
 }
@@ -431,13 +431,13 @@ ul {
 .overlayer {
   display: none;
   position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
@@ -459,8 +459,8 @@ ul {
     max-width: 90vw;
   }
   .join_form table th span {
-    text-indent: 0;
     font-size: 13px;
+    text-indent: 0;
   }
   .join_form table {
     width: 100%;
@@ -470,8 +470,8 @@ ul {
     height: 37px;
     padding: 10px;
     border: 1px solid #ececec;
-    color: #4c4c4c;
     font-size: 14px;
+    color: #4c4c4c;
   }
   .join_form table input.email {
     display: inline-block;
@@ -530,21 +530,21 @@ ul {
   .mar10:after,
   .join_form.idpwFind table td select:after {
     display: block;
-    content: '';
     clear: both;
+    content: '';
   }
   .popWrap {
-    margin: 30px auto 0;
     right: auto;
-    max-width: 80vw;
     left: 50%;
+    max-width: 80vw;
+    margin: 30px auto 0;
     transform: translateX(-50%);
   }
   .join_form table td a.btn_confirm {
     width: 100px;
     height: 35px;
-    line-height: 35px;
     font-size: 12px;
+    line-height: 35px;
   }
   .join_form table input.send_number + a {
     margin: 0 0 0 5px;

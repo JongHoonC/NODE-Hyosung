@@ -35,8 +35,8 @@
 
 .notice__search {
   display: flex;
-  border-bottom: 1px solid #d9d9d9;
   padding-bottom: 10px;
+  border-bottom: 1px solid #d9d9d9;
   box-sizing: border-box;
 }
 .notice__search a img {
@@ -56,11 +56,11 @@ input::placeholder {
 .notice__list .banner {
   display: flex;
   justify-content: space-between;
-  text-align: center;
   margin-top: 20px;
   border-top: 3px solid #333;
   border-bottom: 1px solid #cfcfcf;
   background-color: rgb(244, 244, 244);
+  text-align: center;
 }
 .notice__list ul {
   display: flex;
@@ -69,16 +69,16 @@ input::placeholder {
 }
 .notice__list .banner li {
   padding: 11px 10px 10px;
-  color: #333;
-  font-weight: bold;
   font-size: 16px;
+  font-weight: bold;
+  color: #333;
 }
 .notice__list .list li {
   padding: 11px 10px 10px;
-  color: #333;
-  font-weight: 500;
-  font-size: 14px;
   border-bottom: 1px solid #cfcfcf;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
 }
 .notice__list .list:hover {
   background-color: rgb(219, 219, 219);
@@ -138,8 +138,8 @@ a:hover {
   .notice__list .list li {
     overflow: hidden;
     font-size: 12px;
-    text-overflow: ellipsis;
     white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .convenience {
     flex-direction: column;

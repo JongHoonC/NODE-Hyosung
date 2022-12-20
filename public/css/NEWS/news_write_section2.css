@@ -4,9 +4,9 @@
 }
 
 .section2__title {
-  text-align: center;
-  font-weight: bold;
   font-size: 40px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .storage {
@@ -21,9 +21,9 @@
   width: 100px;
   height: 50px;
   border: 1px solid #000;
+  font-weight: bold;
   line-height: 50px;
   text-align: center;
-  font-weight: bold;
 }
 .write--box {
   margin: 20px 0;
@@ -34,8 +34,8 @@
 }
 .write--box textarea {
   width: 100%;
-  resize: none;
   margin-top: 20px;
+  resize: none;
 }
 
 .push {
@@ -50,8 +50,8 @@
   height: auto;
   padding: 5px 10px;
   border: 1px solid #000;
-  box-sizing: border-box;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 .cancel {

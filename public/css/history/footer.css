@@ -3,9 +3,9 @@ footer {
   display: flex;
   width: 100%;
   padding: 20px 40px;
+  background-color: #1b1b1b;
   color: #777777;
   box-sizing: border-box;
-  background-color: #1b1b1b;
 }
 
 .footer__wraper {
@@ -20,10 +20,10 @@ a > .LOGO_m {
   width: 250px;
   height: 24px;
   padding: 35px 0;
-  box-sizing: border-box;
   background-image: url(../../img/footer_LOGO.png);
   background-repeat: no-repeat;
   background-position: center center;
+  box-sizing: border-box;
 }
 
 /*footer leftBox*/
@@ -32,8 +32,8 @@ a > .LOGO_m {
   height: 100%;
 }
 .footer__content {
-  font-size: 13px;
   font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px;
 }
 .footer__content h6 {
   margin: 5px 0;
@@ -42,32 +42,32 @@ a > .LOGO_m {
 
 .footer__copyright > h6 {
   margin-top: 20px;
-  font-size: 10px;
   font-family: 'Roboto', sans-serif;
+  font-size: 10px;
 }
 
 /*footer rightBox*/
 .footer__rightBox {
   display: flex;
+  flex-direction: column;
   width: 50%;
   height: 100%;
-  flex-direction: column;
   padding-top: 20px;
   box-sizing: border-box;
 }
 
 .rightBox__content {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .rightBox__text h5 {
-  text-align: right;
-  font-size: 15px;
-  font-weight: 500;
   margin-bottom: 15px;
   font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: right;
 }
 
 /*sns__list*/
@@ -84,16 +84,16 @@ a > .LOGO_m {
 }
 
 .dropup-center {
-  text-align: right;
   margin-left: 20px;
+  text-align: right;
 }
 
 .rightBox__content > .footer__copyright {
   display: none;
 }
 .dropdown-toggle {
-  color: #777777;
   background-color: transparent;
+  color: #777777;
 }
 
 .dropdown-menu.show {

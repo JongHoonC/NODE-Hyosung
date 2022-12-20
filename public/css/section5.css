@@ -13,17 +13,17 @@
   text-align: center;
 }
 .section5__title strong {
-  color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 50px;
   font-weight: 900;
+  color: #fff;
 }
 
 .section5__title h5 {
   margin: 40px 0 200px 0;
-  color: #7e7e7e;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
+  color: #7e7e7e;
 }
 /*타이틀*/
 
@@ -60,9 +60,9 @@
 
 /*부제목*/
 .content--text {
-  color: #fff;
   margin-top: 40px;
   font-size: 26px;
+  color: #fff;
   text-align: center;
 }
 
