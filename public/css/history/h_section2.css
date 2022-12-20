@@ -15,51 +15,29 @@ article {
 }
 .timeline__nav.active {
   position: fixed;
-<<<<<<< HEAD
   top: 0;
   z-index: 99;
   transition: top 0.3s ease-out;
-=======
-  z-index: 99;
-  left: 150px;
-  transition: top 0.3s;
->>>>>>> b80741620e037c1488a313587e86dbb99c7b0e7a
 }
 .timeline__nav ul {
   margin: 15px 0;
   list-style: none;
   list-style-position: inside;
-<<<<<<< HEAD
-=======
-}
-.wrapper {
-  /* padding: 0 16.66% 50px; */
-  width: 100%;
-  margin: 0 auto;
->>>>>>> b80741620e037c1488a313587e86dbb99c7b0e7a
 }
 .timeline__nav ul li {
   margin: 15px 0;
   color: #bfc1c3;
   padding-left: 0;
   list-style-type: none;
-<<<<<<< HEAD
   border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
   color: #bfc1c3;
-=======
->>>>>>> b80741620e037c1488a313587e86dbb99c7b0e7a
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
 }
 .timeline__nav ul li.active {
-<<<<<<< HEAD
   border-bottom: 1px dotted transparent;
   font-weight: bold;
   color: #f94125;
-=======
-  color: #4db6ac;
-  font-weight: bold;
->>>>>>> b80741620e037c1488a313587e86dbb99c7b0e7a
   transform: scale(1.2);
   font-family: 'Poppins', sans-serif;
 }
