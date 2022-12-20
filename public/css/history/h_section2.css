@@ -2,9 +2,6 @@
   position: relative;
   width: 100%;
 }
-.timeline__wrap > * {
-  transition: all 0.3s;
-}
 article {
   margin: 100px auto 350px auto;
   max-width: 980px;
@@ -20,7 +17,7 @@ article {
   position: fixed;
   z-index: 99;
   left: 150px;
-  /* transition: top 0.3s; */
+  transition: top 0.3s;
 }
 .timeline__nav ul {
   margin: 15px 0;

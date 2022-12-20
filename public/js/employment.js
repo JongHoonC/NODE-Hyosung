@@ -125,7 +125,7 @@ $(() => {
       $('html, body').animate(
         {scrollTop: scrollTargetTop},
         {
-          duration: 400,
+          duration: 0,
           complete: function complete() {
             scrollTarget = false;
           },
