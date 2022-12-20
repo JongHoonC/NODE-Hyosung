@@ -71,7 +71,7 @@ function scrollBtn() {
 }
 
 window.addEventListener('scroll', event => {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     fixedNav.classList.add('active');
   } else {
     fixedNav.classList.remove('active');
@@ -88,7 +88,7 @@ $(() => {
     offsetTop = parseInt(timeline.css('top'));
 
   const TIMELINE_VALUES = {
-    start: 190,
+    start: 100,
     step: 30,
   };
 
@@ -120,7 +120,7 @@ $(() => {
     if (!li.hasClass('active') && milestone.length) {
       scrollTarget = index;
 
-      let scrollTargetTop = milestone.offset().top - 80;
+      let scrollTargetTop = milestone.offset().top - 100;
 
       $('html, body').animate(
         {scrollTop: scrollTargetTop},
