@@ -152,8 +152,8 @@
     width: 20px;
   }
   .section4__more > a > p {
-    text-decoration: none !important;
     font-size: 12px;
+    text-decoration: none !important;
   }
   .section4__more > a > span > img {
     display: block;
