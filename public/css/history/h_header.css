@@ -403,3 +403,10 @@ ul {
     box-sizing: border-box;
   }
 }
+@media (max-width: 414px) {
+  .LOGO {
+    width: 180px;
+    height: 17px;
+    background-image: url(../../img/180sub.png);
+  }
+}

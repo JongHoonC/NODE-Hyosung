@@ -330,6 +330,12 @@ ul {
   .focus a .LOGO {
     background-image: url(../../img/LOGO_m_viewing13.png);
   }
+  .hamberger > a > .LOGO {
+    width: 250px;
+    height: 30px;
+    padding: 15px 0;
+    background-image: url(../../img/LOGO_m_viewing13.png);
+  }
   #h_wrap {
     height: 60px;
     padding: 0 20px;
@@ -337,12 +343,6 @@ ul {
   .h_right {
     height: 60px;
     padding: 15px 0;
-  }
-  .hamberger > a > .LOGO {
-    width: 250px;
-    height: 30px;
-    padding: 15px 0;
-    background-image: url(../../img/LOGO_m_viewing13.png);
   }
   .sidenav {
     margin-top: 60px;
@@ -401,5 +401,13 @@ ul {
   .accordion-body {
     padding: 16px 45px 16px 20px;
     box-sizing: border-box;
+  }
+}
+
+@media (max-width: 414px) {
+  .LOGO {
+    width: 180px;
+    height: 17px;
+    background-image: url(../../img/180sub.png);
   }
 }
