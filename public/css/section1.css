@@ -30,7 +30,7 @@
       transform: none;
     }
     100% {
-      transform: scale(0);
+      transform: none;
     }
   }
 }
