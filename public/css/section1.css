@@ -24,6 +24,17 @@
   }
 }
 
+@media (max-width: 768px) {
+  @keyframes scale {
+    0% {
+      transform: none;
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+}
+
 /* 섹션1 */
 .section1 {
   display: flex;
