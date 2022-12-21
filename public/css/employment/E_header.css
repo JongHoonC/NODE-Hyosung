@@ -361,4 +361,35 @@ ul {
   .accordion {
     display: block;
   }
+  .underMenu > li > a {
+    font-size: 14px;
+    margin: 20px 0;
+    font-weight: 500;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #fff;
+    color: #818181;
+    box-shadow: none;
+  }
+  .accordion-button > p {
+    text-align: center;
+    width: 100%;
+  }
+
+  .accordion-button:focus {
+    border-color: #333;
+    box-shadow: none;
+  }
+  accordion-button.collapsed#text {
+    font-size: 50px;
+  }
+  .accordion-flush .accordion-item .accordion-button,
+  .accordion-flush .accordion-item .accordion-button.collapsed {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+  }
 }
