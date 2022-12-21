@@ -27,6 +27,6 @@ new fullpage('#fullpage', {
 var swiper = new Swiper('.swiperMy', {
   slidesPerView: 3,
   loop: true,
-  spaceBetween: 40,
+  spaceBetween: 20,
   freeMode: true,
 });

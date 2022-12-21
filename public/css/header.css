@@ -347,18 +347,18 @@
     display: block;
   }
   .underMenu > li > a {
-    font-size: 14px;
     margin: 20px 0;
+    font-size: 14px;
     font-weight: 500;
   }
   .accordion-button:not(.collapsed) {
     background-color: #fff;
-    color: #818181;
     box-shadow: none;
+    color: #818181;
   }
   .accordion-button > p {
-    text-align: center;
     width: 100%;
+    text-align: center;
   }
 
   .accordion-button:focus {
@@ -372,9 +372,19 @@
   .accordion-flush .accordion-item .accordion-button.collapsed {
     display: flex;
     justify-content: center;
-    font-weight: bold;
     font-size: 18px;
+    font-weight: bold;
     color: #333;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+  }
+  .accordion-button {
+    box-sizing: border-box;
+  }
+  .accordion-body {
+    padding: 16px 45px 16px 20px;
+    box-sizing: border-box;
   }
 }
 

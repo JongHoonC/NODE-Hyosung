@@ -50,3 +50,8 @@
     margin: 0 auto;
   }
 }
+@media (max-width: 768px) {
+  .swiper-slide {
+    min-width: 250px;
+  }
+}

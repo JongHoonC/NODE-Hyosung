@@ -94,3 +94,23 @@
     margin: 40px 0 100px 0;
   }
 }
+
+@media (max-width: 485px) {
+  .section5__title strong {
+    font-size: 26px;
+  }
+  .section5__wrap {
+    padding: 50px 20px;
+  }
+  .section5__title h5 {
+    font-size: 12px;
+  }
+  .C_IMG {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+  }
+  .content--text {
+    font-size: 12px;
+  }
+}

@@ -51,3 +51,19 @@ ul a {
     width: 100%;
   }
 }
+@media (max-width: 485px) {
+  section {
+    width: 100%;
+    height: auto;
+  }
+  section.section-2.aos-init.fp-section.fp-table.active.fp-completely {
+    height: 500px !important;
+  }
+  .fp-tableCell {
+    height: 500px !important;
+  }
+  .fp-section.fp-table,
+  .fp-slide.fp-table {
+    height: 500px !important;
+  }
+}
