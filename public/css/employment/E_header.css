@@ -348,17 +348,17 @@ ul {
     margin-top: 60px;
   }
 }
+.accordion {
+  display: none;
+}
 @media (max-width: 1000px) {
   .h_right > ul > li > a {
     font-size: 14px;
   }
-  #mySidenav > ul > li > ul {
+  #mySidenav > ul {
     display: none;
   }
-  #mySidenav > ul {
-    flex-direction: column;
-  }
-  #mySidenav > ul > li {
-    margin-bottom: 50px;
+  .accordion {
+    display: block;
   }
 }

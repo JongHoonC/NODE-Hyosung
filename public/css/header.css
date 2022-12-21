@@ -280,6 +280,9 @@
   background-color: #4db6ac;
 }
 
+.accordion {
+  display: none;
+}
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -336,14 +339,11 @@
   .h_right > ul > li > a {
     font-size: 14px;
   }
-  #mySidenav > ul > li > ul {
+  #mySidenav > ul {
     display: none;
   }
-  #mySidenav > ul {
-    flex-direction: column;
-  }
-  #mySidenav > ul > li {
-    margin-bottom: 50px;
+  .accordion {
+    display: block;
   }
 }
 
