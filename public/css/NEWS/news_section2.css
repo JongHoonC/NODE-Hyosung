@@ -138,3 +138,31 @@ a:hover {
     font-size: 12px;
   }
 }
+
+@media (max-width: 500px) {
+  a.news_wrap {
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 30px;
+    border-bottom: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    flex-direction: column;
+  }
+  .news__date > p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .news__date {
+    display: flex;
+    justify-content: center;
+  }
+  .news__text-wrap {
+    padding: 0;
+  }
+  .news__subject > p {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

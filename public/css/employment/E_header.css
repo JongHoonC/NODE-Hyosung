@@ -410,4 +410,15 @@ ul {
     height: 17px;
     background-image: url(../../img/180sub.png);
   }
+
+  .hamberger > a > .LOGO {
+    width: 180px;
+    height: 17px;
+    background-image: url(../../img/180black.png);
+  }
+  #h_wrap.focus > a > .LOGO {
+    width: 180px;
+    height: 17px;
+    background-image: url(../../img/180black.png);
+  }
 }
