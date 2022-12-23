@@ -61,7 +61,7 @@ router.get('/news_write', (req, res, next) => {
 const upload = multer({
   storage: multer.diskStorage({
     destination(req, file, done) {
-      done(null, '../public/upload/');
+      done(null, './public/upload');
     },
     filename(req, file, done) {
       const ext = path.extname(file.originalname); //파일의 확장자
@@ -126,6 +126,7 @@ router.post('/writeList', (req, res, next) => {
   let param = JSON.parse(JSON.stringify(req.body));
   let title = param['title'];
   let content = param['content'];
+  console.log(title);
   db.insertNotice(title, content, () => {
     res.redirect('/notice');
   });
