@@ -68,9 +68,9 @@ a {
 }
 section {
   position: relative;
+  overflow: hidden;
   width: 100%;
   height: auto;
-  overflow: hidden;
 }
 
 @media (max-width: 1280px) {
