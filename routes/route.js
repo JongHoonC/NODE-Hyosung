@@ -6,10 +6,6 @@ const {send} = require('process');
 const db = require('./../db.js');
 const fs = require('fs');
 
-// router.get('/', (req, res, next) => {
-//   res.render('index');
-// });
-
 router.get('/emp', (req, res, next) => {
   res.render('employment', {layout: 'layoutEmp'});
 });

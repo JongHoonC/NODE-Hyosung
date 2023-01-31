@@ -5,7 +5,7 @@ var connection = mysql.createConnection({
   host: 'mydb.c1s9tr2yqxmc.ap-northeast-1.rds.amazonaws.com',
   user: 'admin',
   password: 'Whdgns3853!',
-  database: 'hyosung', //테이블 이름을 적어준다.
+  database: 'hyosung',
   dateStrings: 'date',
   multipleStatements: true,
 });
