@@ -57,7 +57,7 @@ function updateNotice(id, title, content, callback) {
 
 // 공지사항 수정 페이지로 넘어가는 과정
 function getUpdateNotice(id, callback) {
-  connection.query(`select * from notice_table where id='${id}'`, (err, row) => {
+  connection.query(`SELECT * FROM notice_table WHERE id='${id}'`, (err, row) => {
     if (err) throw err;
     callback(row);
   });
@@ -129,7 +129,7 @@ function updateNews(id, title, content, img, callback) {
 
 // 뉴스 수정 페이지로 넘어가는 과정
 function getUpdateNews(id, callback) {
-  connection.query(`select * from news_table where id='${id}'`, (err, row) => {
+  connection.query(`SELECT * FROM news_table WHERE id='${id}'`, (err, row) => {
     if (err) throw err;
     callback(row);
   });
