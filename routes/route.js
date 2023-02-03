@@ -39,7 +39,7 @@ router.get('/notice', (req, res, next) => {
 // 메인페이지 뉴스
 router.get('/', (req, res, next) => {
   db.getMainNews(rows => {
-    res.render('index', {rows: rows});
+    res.render('/', {rows: rows});
   });
 });
 // 뉴스 메인
