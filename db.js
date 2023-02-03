@@ -65,7 +65,7 @@ function getUpdateNotice(id, callback) {
 
 // 회원가입 페이지
 function userSignUp(id, name, pw, mail, phoneNum, callback) {
-  connection.query(`INSERT INTO user_list(id, name, pw, mail, phoneNum, create_time) values('${id}','${name}','${pw}','${mail}',${phoneNum},NOW())`, err => {
+  connection.query(`INSERT INTO user_list(id, name, pw, mail, phoneNum, create_time) VALUES('${id}','${name}','${pw}','${mail}',${phoneNum},NOW())`, err => {
     if (err) throw err;
     callback();
   });
