@@ -142,15 +142,6 @@ function getMainNews(callback) {
     callback(rows);
   });
 }
-// 두개 이상의 테이블을 한 번에 조회할 때
-// function getMainNews(callback) {
-//   connection.query('SELECT * FROM news_table ORDER BY id DESC;'+@@@@, (err, rows) => {
-//     let rows1 = rows[0]
-//     let rows2 = rows[1]
-//     if (err) throw err;
-//     callback(row1,rows2);
-//   });
-// }
 
 module.exports = {
   getNotice,
