@@ -36,16 +36,16 @@ router.get('/notice', (req, res, next) => {
   });
 });
 
-// 뉴스 메인
-router.get('/news', (req, res, next) => {
-  db.getnews(rows => {
-    res.render('news', {rows: rows, layout: 'layoutnews'});
-  });
-});
 // 메인페이지 뉴스
 router.get('/', (req, res, next) => {
   db.getMainNews(rows => {
     res.render('index', {rows: rows});
+  });
+});
+// 뉴스 메인
+router.get('/news', (req, res, next) => {
+  db.getnews(rows => {
+    res.render('news', {rows: rows, layout: 'layoutnews'});
   });
 });
 
