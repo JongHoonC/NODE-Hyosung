@@ -81,7 +81,7 @@ function signUpNext(id, callback) {
 
 // 로그인
 function loginCheck(id, pw, callback) {
-  connection.query(`SELECT * FROM user_list WHERE id='${id}' and pw='${pw}'`, (err, results) => {
+  connection.query(`SELECT * FROM user_list WHERE id='${id}' AND pw='${pw}'`, (err, results) => {
     if (err) throw err;
     callback(results);
   });

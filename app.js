@@ -6,6 +6,7 @@ const routers = require('./routes/route');
 const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
+var endpoint = process.env.API_ENDPOINT;
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
